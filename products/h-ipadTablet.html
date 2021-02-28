@@ -8,6 +8,12 @@
     <title>Ipad-tablet</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+
+    <script
+    src="https://kit.fontawesome.com/c1a4e17460.js"
+    crossorigin="anonymous"
+  ></script>
+
 </head>
 
 
@@ -18,66 +24,78 @@
 
     </header>
     <main>
-
+        <div class="pic-spics">
+            <div class="imgsAndTable">  
         <section class='productImg'>
-            <img src="../images/tablet/apple tablet/apple-tablet-1.jpg" />
-            <img src="../images/tablet/apple tablet/apple-tablet-2.jpg" />
-            <img src="../images/tablet/apple tablet/apple-tablet-3.jpg" />
-
-
+            <img class="mySlides fade" src="../images/tablet/apple tablet/apple-tablet-1.jpg" />
+            <img class="mySlides fade" src="../images/tablet/apple tablet/apple-tablet-2.jpg" />
+            <img class="mySlides fade" src="../images/tablet/apple tablet/apple-tablet-3.jpg" />
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
         </section>
-        <section>
-            <table class="productTable">
-                <tr>
-                    <th>
-                        product Name
-                    </th>
-                    <td>
-                        iPadOS 14
+</div >
 
+<!-------------------------- Table of Specification ------------------------->
+section>
+        <div class="model">
+            <h4 class="spic-h4">Product Name: iPadOS 14
+            </h4>
+            <h6>Model No:A1709 (Wi-Fi/Cellular)</h6>
+            <h5> 1240 JOD</h5>
+        </div>
+        <div class="model">
+            <h4>Decsription</h4>
+            <p> iOS 14 with some additional change</p>
+        </div>
+    <section>
+        <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO CART</button>
+    </section>
+        <tabl>
+            <th>Specification</th>
+            <th>Property</th>
+            <tr>
+                <td>Color</td>
+                <td>Silver , black</td>
+            </tr>
+            <tr>
+                <td>Additional Info</td>
+                <td>Camera Wireless , Bluetooth , ios 14</td>
+            </tr>
+            <tr>
+                <td>Warranty</td>
+                <td>1 Year</t>
+            </tr>
+            <tr>
+                <td>Processor</td>
+                <td>ios 14 up to 4.7GHz 12M </td>
+            </tr>
+            <tr>
+                <td>Memory RAM</td>
+                <td>128 GB RAM DDR4</td>
+            </tr>
+            <tr>
+                <td>Screen Size (Inch)</td>
+                <td>12.9" FHD IPS 250 nits Display</td>
+            </tr>
+            <tr>
+                <td>Storage</td>
+                <td>1TB PCIe® NVMe™ M.2 SSD</td>
+            </tr>
+        </table>
+    </section>
+</div>
 
-                    </td>
-
-                </tr>
-                <tr>
-                    <th>description</th>
-                    <td>
-                        <p>
-
-                            About this item. 9.7" LED-backlit IPS LCD Multi-Touchscreen. 22 Megapixel Camera (3264 x 2448 pixels) w/ Autofocus + Front-facing 1.2 Megapixel Camera w/ face detection, HDR, FaceTime over Wi-Fi. Apple A9X 64-bit SoC with M9 Co-processor. Scratch-Resistant
-                            and Oleophobic Coating. ›See more product details.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        price
-                    </th>
-                    <td>
-                        350$
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        Dummy review
-                    </th>
-                    <td>
-                        <p> Available space is less and varies due to many factors. A standard configuration uses approximately 10GB to 13GB of space depending on the model and settings. Preinstalled apps use about 4GB, and you can delete these apps and restore
-                            them. Storage capacity subject to change based on software version and may vary by device. * Apple Card Monthly Installments is available for certain Apple products and is subject to credit approval and credit limit. iPhone
-                            activation required on iPhone purchases made at an Apple Store with one of these national carriers: AT&T, Sprint, Verizon, or T-Mobile. Variable APRs for Apple Card other than Apple Card Monthly Installments range from 10.99%
-
-
-                        </p>
-                    </td>
-                </tr>
-            </table>
-
-        </section>
 
         <section>
             <form>
                 <lable for="userName">please enter your full Name
                 </lable><input type="text" id="name" name="userName"><br><label for="inputReview">please write your
-          review</label><input type="text" id="inputReview"><br> <input id="subReview" type="submit" value="Submit">
+                    review</label><input type="text" id="inputReview"><br> <input id="subReview" type="submit" value="Submit">
             </form>
 
         </section>
@@ -86,6 +104,7 @@
         </section>
     </main>
     <footer></footer>
+    <script src="../js/sliders.js"></script>
 
 </body>
 
