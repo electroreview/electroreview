@@ -39,14 +39,14 @@ Product.allProducts = [];
 // The Catalog
 function generateCatalog() {
     new Product('images/laptop/DellLaptop/dell-1.jpg','Dell');
-    new Product('images/laptop/HpLaptop/hp-1.jpg','Dell');
-    new Product('images/laptop/LenovoLaptop/lenovo-1.jpg','Dell');
-    new Product('images/phones/ApplePhone/iphone-1.jpg','Dell');
-    new Product('images/phones/GooglePixel/google-pixel-1.jpg','Dell');
-    new Product('images/phones/HuaweiPhone/huawei-1.jpg','Dell');
-    new Product('images/tablet/AppleTablet/apple-tablet-1.jpg','Dell');
-    new Product('images/tablet/HuaweiTablet/huawei-tablet-1.jpg','Dell');
-    new Product('images/tablet/SamsungTablet/galaxy-tablet-1.jpg','Dell');
+    new Product('images/laptop/HpLaptop/hp-1.jpg','hp');
+    new Product('images/laptop/LenovoLaptop/lenovo-1.jpg','lenovo');
+    new Product('images/phones/ApplePhone/iphone-1.jpg','iphone');
+    new Product('images/phones/GooglePixel/google-pixel-1.jpg','google');
+    new Product('images/phones/HuaweiPhone/huawei-1.jpg','huawei');
+    new Product('images/tablet/AppleTablet/apple-tablet-1.jpg','apple-tablet');
+    new Product('images/tablet/HuaweiTablet/huawei-tablet-1.jpg','huawei-tablet');
+    new Product('images/tablet/SamsungTablet/galaxy-tablet-1.jpg','galaxy-tablet');
 }
 
 generateCatalog();
