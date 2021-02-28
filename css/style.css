@@ -1,35 +1,13 @@
-        .productTable tr,
-        th,
-        td {
-            border: 2px solid black;
-            padding: 10px;
-        }
-        
-        .productTable {
-            width: 50%;
-        }
-        
-        .productImg img {
-            width: 400px;
-            height: 400px;
-        }
-        
-        #inputReview {
-            width: 20%;
-            height: 100px;
-        }
-        
-        form #subReview {
-            margin: 50px;
-        }
-        
-        #userReview {
-            width: 50%;
-            align-items: center;
-        }
-        
-        #name {
-            width: 20%;
-            margin: 2%;
-            padding: 10px;
-        }
+header #index{
+  
+    float: right;
+    margin-top: 40px;
+    margin-left: 10px;
+  
+  }
+  
+  header ul li {
+    display: inline-block;
+  
+  }
+  

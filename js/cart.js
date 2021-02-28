@@ -71,12 +71,3 @@ function renderCart() {
 }
 
 renderCart();
-/*const table = document.getElementById("table");
-const trList = table.getElementsByTagName("tr");
-for (let i = 0; i < trList.length; i++) {
-    (function(i) {
-        trList[i].addEventListener("click", function(event) {
-            alert("subReview " + (i + 1) + " Clicked");
-        });
-    }(i));
-}
