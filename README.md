@@ -7,6 +7,7 @@
 3. Nour Eddein Al Abbassi
 4. Nada Al Yousef
 5. Mais Daoud
+6. Muhanad Abdalwahad
 
 ## Short Description of this project
 
