@@ -22,3 +22,14 @@
         form #subReview {
             margin: 50px;
         }
+        
+        #userReview {
+            width: 50%;
+            align-items: center;
+        }
+        
+        #name {
+            width: 20%;
+            margin: 2%;
+            padding: 10px;
+        }
