@@ -18,14 +18,19 @@
 
     </header>
     <main>
-
+<div class="imgsAndTable">
         <section class='productImg'>
-            <img src="../images/laptop/lenov laptop/lenovo-1.jpg" />
-            <img src="../images/laptop/lenov laptop/lenovo-2.jpg" />
-            <img src="../images/laptop/lenov laptop/lenovo-3.jpg" />
+            <img class="mySlides fade" src="../images/laptop/LenovoLaptop/lenovo-1.jpg" />
+            <img class="mySlides fade" src="../images/laptop/LenovoLaptop/lenovo-2.jpg" />
+            <img class="mySlides fade" src="../images/laptop/LenovoLaptop/lenovo-3.jpg" />
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
 
-
-
+            </div>
         </section>
         <section>
             <table class="productTable">
@@ -66,7 +71,7 @@
             </table>
 
         </section>
-
+</div>
         <section>
             <form>
                 <lable for="userName">please enter your full Name
@@ -80,6 +85,7 @@
         </section>
     </main>
     <footer></footer>
+    <script src="../js/sliders.js"></script>
 
 </body>
 

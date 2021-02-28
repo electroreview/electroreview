@@ -18,58 +18,88 @@
 
     </header>
     <main>
+        <div class="">
+        <div class="imgsAndTable">
+            <section class='productImg'>
 
-        <section class='productImg'>
-            <img src="../images/laptop/dell laptop/dell-1.jpg" />
-            <img src="../images/laptop/dell laptop/dell-2.jpg" />
-            <img src="../images/laptop/dell laptop/dell-3.jpg" />
+                <img class="mySlides fade" src="../images/laptop/DellLaptop/dell-1.jpg" />
+                <img class="mySlides fade" src="../images/laptop/DellLaptop/dell-2.jpg" />
+                <img class="mySlides fade" src="../images/laptop/DellLaptop/dell-3.jpg" />
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
 
+        </div>
+            </section>
+<!-------------------------- Table of Specification ------------------------->
 
-        </section>
+            <section>
+                <div class="model">
+                    <h4 class="spic-h4">Product Name: Dell Latitude </h4>
+                    <h6>Model No: 5300 Business </h6>
+                    <h5>549 JOD</h5>
+                </div>
+
+                <div class="model">
+                    <h4>Decsription</h4>
+                    <p>Core i5 Laptop 2-in-1 Touch, Windows 10 Home</p>
+                </div>
+                <section>
+                    <button class="addToCart">
+                        <i class="fas fa-cart-plus"> </i> ADD TO CART
+                    </button>
+                </section>
+                <section>
+                    <table>
+                        <th>Specification</th>
+                        <th>Property</th>
+                        <tr>
+                            <td>Color</td>
+                            <td>Black</td>
+                        </tr>
+                        <tr>
+                            <td>Additional Info</td>
+                            <td>Windows 10 Home</td>
+                        </tr>
+                        <tr>
+                            <td>Warranty</td>
+                            <td>1 Year</td>
+                        </tr>
+                        <tr>
+                            <td>Processor</td>
+                            <td>Core i5 Laptop</td>
+                        </tr>
+                        <tr>
+                            <td>Memory RAM</td>
+                            <td>8 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Screen Size (Inch)</td>
+                            <td>13.3" IPS Full HD Touch Screen Anti-Reflective</td>
+                        </tr>
+                        <tr>
+                            <td>Storage</td>
+                            <td>256 GB PCIe® NVMe™ M.2 SSD</td>
+                        </tr>
+                        <tr>
+                            <td>Graphic Card</td>
+                            <td>Intel® UHD Graphic Card</td>
+                        </tr>
+                    </table>
+
+                </section>
+</div>
         <section>
-            <table class="productTable">
-                <tr>
-                    <th>
-                        product Name
-                    </th>
-                    <td>
-                        Dell Latitude 5300 Business Intel
-                    </td>
-
-                </tr>
-                <tr>
-                    <th>description</th>
-                    <td>
-                        <p> Core i5 Laptop 2-in-1 Touch, 8GB RAM DDR4 , 256 GB PCIe® NVMe™ M.2 SSD , 13.3" IPS Full HD Touch Screen Anti-Reflective, Intel® UHD Graphic Card , Camera , Wireless , Bluetooth , Windows 10 Home</p>
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        price
-                    </th>
-                    <td>
-                        550$
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        Dummy review
-                    </th>
-                    <td>
-                        <p> At just 13 inches, the Dell Latitude 5300 is a small and lightweight companion for everyday business. Users do not have to go without safety features and the maintenance options are reasonable. What else is in the small business
-                            laptop, we clarify in our review.
-                        </p>
-                    </td>
-                </tr>
-            </table>
-
-        </section>
-
-        <section>
+            </div>
             <form>
                 <lable for="userName">please enter your full Name
                 </lable><input type="text" id="name" name="userName"><br><label for="inputReview">please write your
-                    review</label><input type="text" id="inputReview"><br> <input id="subReview" type="submit" value="Submit">
+                    review</label><input type="text" id="inputReview"><br> <input id="subReview" type="submit"
+                    value="Submit">
             </form>
 
         </section>
@@ -78,6 +108,7 @@
         </section>
     </main>
     <footer></footer>
+    <script src="../js/sliders.js"></script>
 
 </body>
 
