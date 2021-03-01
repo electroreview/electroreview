@@ -3,146 +3,161 @@ html bodey {
 }
 
 .productImg img {
-  width: 400px;
-  height: 400px;
+    width: 400px;
+    height: 400px;
 }
 
 #inputReview {
-  width: 20%;
-  height: 100px;
+    width: 20%;
+    height: 100px;
 }
 
 form #subReview {
-  margin: 50px;
+    margin: 50px;
 }
+
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 5px 2px 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 5px 2px 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
+
 .active,
 .dot:hover {
-  background-color: #717171;
+    background-color: #717171;
 }
+
 .fade {
-  /* -webkit-animation-name: fade; */
-  /* -webkit-animation-duration: 1.5s; */
-  animation-name: fade;
-  animation-duration: 1.5s;
+    /* -webkit-animation-name: fade; */
+    /* -webkit-animation-duration: 1.5s; */
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }
+
 @media only screen and (max-width: 300px) {
-  .prev,
-  .next {
-    font-size: 11px;
-  }
+    .prev,
+    .next {
+        font-size: 11px;
+    }
 }
+
 @keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }
+
 .prev:hover,
 .next:hover {
-  background-color: rgba(88, 88, 88, 0.8);
+    background-color: rgba(88, 88, 88, 0.8);
 }
+
 .next {
-  right: -30px;
-  /* border-radius: 3px 0 0 3px; */
+    right: -30px;
+    /* border-radius: 3px 0 0 3px; */
 }
+
 .prev,
 .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: rgb(105, 170, 255);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s eacse;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(105, 170, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s eacse;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
+
 .productImg {
-  position: relative;
-  width: 400px;
+    position: relative;
+    width: 400px;
 }
+
 .imgsAndTable {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 h4,
 h5,
 h6,
 p {
-  margin: 5px;
-  padding: 6px;
+    margin: 5px;
+    padding: 6px;
 }
 
 .model {
-  background-color: #e9e9e9;
-  color: #141414;
-  font-size: 1.3rem;
-  margin: 5px;
-  width: 100%;
+    background-color: #e9e9e9;
+    color: #141414;
+    font-size: 1.3rem;
+    margin: 5px;
+    width: 100%;
 }
+
 table {
-  width: 100%;
-  text-align: left;
-  margin-top: 15px;
-  background-color: #e9e9e9;
-  padding: 10px;
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+    background-color: #e9e9e9;
+    padding: 10px;
 }
-table th {
-  border-bottom: 2px solid rgb(0, 0, 0);
-  font-size: 1.5rem;
-  padding: 10px;
+
+#d4b5c8 #c289ac #a3688c #e597c8 table th {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    font-size: 1.5rem;
+    padding: 10px;
 }
+
 table td {
-  padding: 5px;
-  width: 50%;
+    padding: 5px;
+    width: 50%;
 }
 
 .addToCart {
-  background-color: #ffdd00;
-  border: none;
-  color: rgb(59, 59, 59);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+    background-color: #c05296;
+    border: none;
+    color: rgb(59, 59, 59);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 .pic-spics {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 /* product css */
+
 main h2 {
+
   font-size: 70px;
   font-style: italic;
   font-family: "Times New Roman", Times, serif;
@@ -194,3 +209,247 @@ main ul li {
   bottom: 2%;
   left: 45%;
 }
+
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+main ul li {
+    display: inline-block;
+
+      padding: 70px;
+    }
+    .card {
+      background-color: #fffffe;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+/*     
+ //////////added    */
+    
+ body,
+ html {
+   height: 100%;
+   width: 100%;
+ }
+ 
+ body {
+   background-image: linear-gradient(to top right, #fff, #ccc);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+ /* Specifically Targeting the Main Header (not to be confused with headers within cards) */
+ 
+ body > header {
+   background: #062f4f;
+   border-bottom: 1px solid #ddd;
+   overflow: hidden;
+   padding: 0.5em 5em;
+ }
+ 
+ body > header:after {
+   content: '';
+   position: fixed;
+   top: -10px;
+   left: 0;
+   width: 100%;
+   height: 10px;
+   z-index: 100;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+ }
+ 
+ body > header nav {
+   float: right;
+   line-height: 2.5em;
+ }
+ 
+ body > header nav li {
+   display: inline-block;
+ }
+ 
+ body > header nav li a {
+   color: #eee;
+   padding: 0 0.5em;
+   text-decoration: none;
+ }
+ 
+ #itemCount {
+   color: #ccc;
+   font-size: 0.75em;
+   line-height: 1em;
+   margin-left: -0.5em;
+ }
+ 
+ body > header h1 {
+   float: left;
+   font-size: 2.5em;
+   color: #fff;
+   text-shadow: -1px -1px 1px #666, 1px 1px 1px #000;
+   opacity: 0.75;
+ }
+ 
+ /* Main Content */
+ 
+ /* Note the height calculation -- that's to keep the footer at the bottom */
+ 
+ main {
+   background: #fff;
+   border: 1px inset #ccc;
+   border-top-left-radius: 6px;
+   border-top-right-radius: 6px;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+   line-height: 1.5em;
+   margin: 1.5em 1.5em 2.5em;
+   min-height: calc(100% - 9.5em);
+   height: auto !important;
+   text-shadow: white -1px 1px;
+ }
+ 
+ /* Footer Styling and sticking to the bottom */
+ 
+ footer {
+   background: #eee;
+   border-top: 1px solid #ccc;
+   color: #666;
+   display: block;
+   height: 1.5em;
+   padding: 0.5em 5em;
+   text-align: center;
+ }
+ 
+ /* Generic Deck and Card Styles */
+ 
+ .deck {
+   overflow: hidden;
+ }
+ 
+ .card {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .deck.col-2 .card {
+   float: left;
+   width: 45%;
+ }
+ 
+ /* Card styles specific to this application */
+ 
+ .card header {
+   background: #0011ff;
+   border-top-left-radius: 6px;
+   border-top-right-radius: 6px;
+   color: #eee;
+   opacity: 0.8;
+   padding: 0.5em;
+   text-align: center;
+   text-shadow: none;
+ }
+ 
+ /* Styles for the order form and summary on the main page */
+ 
+ legend {
+   display: none;
+ }
+ 
+ form {
+   margin: auto;
+   width: 50%;
+ }
+ 
+ input[type='number'],
+ select {
+   height: 1.75em;
+   width: 100%;
+ }
+ 
+ input[type='submit'] {
+   float: right;
+ }
+ 
+ label {
+   display: block;
+   margin-bottom: 1em;
+ }
+ 
+ label span {
+   display: block;
+   padding-bottom: 0.25em;
+ }
+ 
+ .card#cartContents:empty {
+   display: none;
+ }
+ 
+ .card#cartContents {
+   background: #f5f5f5;
+   padding: 1.5em;
+   box-shadow: 0 3px 2px #777;
+ }
+ 
+ /* Styles for the table on the cart page */
+ 
+ #cart {
+   border-collapse: collapse;
+   margin: auto;
+   width: 65%;
+ }
+ 
+ #cart thead tr th {
+   color: #777;
+   border-bottom: 3px solid #062f4f;
+   font-weight: bold;
+   padding: 0.5em 1em;
+ }
+ 
+ #cart tr td {
+   border-bottom: 1px solid #062f4f;
+   border-collapse: none;
+   color: #777;
+   padding: 0.5em 1em;
+   text-align: center;
+   width: auto;
+ }
+ 
+ #cart tr td:last-child,
+ #cart tr th:last-child {
+   text-align: left;
+   width: 100%;
+ }
+ 
+ #cart tr td:first-child {
+   color: red;
+   cursor: pointer;
+ }
+ 
+ #itemImg{
+   width: 100px;
+   height:100px;
+ }
+/*  
+ #message {
+   font-size: xx-large;
+   color: teal;
+   font-family: 'Courier New', Courier, monospace;
+   text-align: center;
+   animation: spin 8s infinite;
+   -webkit-animation: infinite-spinning 1s infinite;
+ }
+ 
+ @keyframes infinite-spinning {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(360deg);
+   }
+ }  
+  */
+
+
