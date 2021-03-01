@@ -14,16 +14,16 @@
 
     <header>
         <h1>Electro Review</h1>
-       
+
         <nav>
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About Us</a></li>
-            <li><a href="../product.html">Products</a></li>
-            <li><a href="../cart.html">Cart</a><span id="itemCount"></span></li>
-          </ul>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../product.html">Products</a></li>
+                <li><a href="../cart.html">Cart</a><span id="itemCount"></span></li>
+            </ul>
         </nav>
-      </header>
+    </header>
 
     <main>
         <div class="pic-spics">
@@ -54,7 +54,7 @@
                     <h4>Decsription</h4>
                     <p>Core i7, Windows 10</p>
                 </div>
-                                 
+
                 <table>
                     <th>Specification</th>
                     <th>Property</th>
@@ -90,28 +90,28 @@
 
                 <section class="deck col-2">
                     <div class="card">
-                      <div class="copy">
-                        <form id="catalog">
-                          <fieldset>
-                            <legend>SHOP NOW!</legend>
-                            <label>
+                        <div class="copy">
+                            <form id="catalog">
+                                <fieldset>
+                                    <legend>SHOP NOW!</legend>
+                                    <label>
                               <span>Item</span>
                               
                               <select id="items" disabled>
                                 <option value="hp laptop" selected>HP Laptop</option>
                               </select>
                             </label>
-                            <label>
+                                    <label>
                               <span>Quantity</span>
                               <input id="quantity" type="number" />
                             </label>
-                            <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO CART</button>
-                          </fieldset>
-                        </form>
-                      </div>
+                                    <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO CART</button>
+                                </fieldset>
+                            </form>
+                        </div>
                     </div>
                     <div class="card" id="cartContents"></div>
-                  </section>
+                </section>
             </section>
         </div>
 
@@ -120,30 +120,40 @@
             <form>
                 <label for="userName">User Name </label>
                 <input type="text" id="name" name="userName"><br>
-
-                <label for="inputReview">please write your review</label>
+                <textarea id="textReview" rows="5" placeholder="please write your review here!"></textarea>
+                <input type="button" value="submit" onclick="updateReview()" />
+                <br />
+                <p id="as"></p>
+                <p id="na"></p>
+                <!-- <label for="inputReview">please write your review</label>
                 <input type="text" id="inputReview"><br> <input id="subReview" type="submit" value="Submit">
-                <!-- //////need fix -->
-                <button class="review"> <i class="fas fa-cart-plus"> </i> Submit your review</button>
+                <button class="review"> <i class="fas fa-cart-plus"> </i> Submit your review</button> -->
             </form>
         </section>
 
-        
+        <!-- <div id="text">
+            <textarea id="textReview" rows="5"></textarea>
+            <input type="button" value="get" onclick="updateReview()" />
+            <br />
+            <p id="as"></p>
+        </div> -->
 
-</main>
 
-<footer id ="footer">
-    <p>&copy;2021 Electro Review</p>
-    <section id ="social">
-      <ul >
-          <li><img src="../assets/socialLogo/fb-icon.png" alt="Facebook"></li>
-          <li><img src="../assets/socialLogo/twit-icon.png" alt="Twitter"></li>
-          <li><img src="../assets/socialLogo/insta-icon.png"alt="Instagram"></li>
-      </ul>
-  </section>
-  </footer>
-  <script src="../js/app.js"></script>
-  <script src="../js/catalog.js"></script>
-  <script src="../js/sliders.js"></script>
+    </main>
+
+    <footer id="footer">
+        <p>&copy;2021 Electro Review</p>
+        <section id="social">
+            <ul>
+                <li><img src="../assets/socialLogo/fb-icon.png" alt="Facebook"></li>
+                <li><img src="../assets/socialLogo/twit-icon.png" alt="Twitter"></li>
+                <li><img src="../assets/socialLogo/insta-icon.png" alt="Instagram"></li>
+            </ul>
+        </section>
+    </footer>
+    <script src="../js/app.js"></script>
+    <script src="../js/catalog.js"></script>
+    <script src="../js/sliders.js"></script>
 </body>
+
 </html>
