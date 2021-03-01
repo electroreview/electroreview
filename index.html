@@ -1,71 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <!-- <meta charset="UTF-8"> -->
-    <!-- <link rel="icon" href="http://example.com/favicon.png"> -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electro Review</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-</head>
+    <head>
+        <!-- <meta charset="UTF-8"> -->
+        <!-- <link rel="icon" href="http://example.com/favicon.png"> -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Electro Review</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
 
-<body>
-    <header>
-        <nav id ="index">
-            <img src="./images/logo.png" alt="logo">
+    <body>
+        <header>
+            <nav id="index">
+                <img src="./images/logo.png" alt="logo">
 
-            <ul>
-                <li><a href="./about.html">About Us</a></li>
-                <li><a href="./products.html">Products</a></li>
-                <li><a href="./cart.html">Cart</a><span id='itemCount'></span></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-<section>
-    <h2 id="cat">categories</h2>
-</section>
-<section id="imgcat">
-    <ul>
-        <li><img src="./images/laptop/LenovoLaptop/lenovo-1.jpg" alt="labtop"></li>
-        <li><img src="./images/phones/ApplePhone/iphone-1.jpg" alt="Phone"></li>
-        <li><img src="./images/tablet/AppleTablet/apple-tablet-1.jpg" alt="Tablet"></li>
+                <ul>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./cart.html">Cart</a><span id='itemCount'></span></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- ----------------------------main img sliders------------------ -->
+            <section class="index-img-slider">
+                <div class="img-arrow">
+                    <img class="mySlides fade"
+                        src="./images/index-img/img-1.jpg" />
+                    <img class="mySlides fade"
+                        src="./images/index-img/img-2.jpg" />
+                    <img class="mySlides fade"
+                        src="./images/index-img/img-3.jpg" />
+                    <img class="mySlides fade"
+                        src="./images/index-img/img-4.jpg" />
+                    <img class="mySlides fade"
+                        src="./images/index-img/img-5.jpg" />
+                    <img class="mySlides fade"
+                        src="./images/index-img/img-6.jpg" />
+                    <a class="prevIndex" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="nextIndex" onclick="plusSlides(1)">&#10095;</a>
+                    <div class="dotIndix" style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                    </div>
+                </div>
+            </section>
 
-    </ul>
-</section>
-<section id="top5">
-    <ul>
-        <li><img src="./images/laptop/DellLaptop/dell-1.jpg" alt="labtop"></li>
-        <li><img src="./images/phones/ApplePhone/iphone-1.jpg" alt="Phone"></li>
-        <li><img src="./images/tablet/SamsungTablet/galaxy-tablet-1.jpg" alt="tablet"></li>
-        <li><img src="./images/phones/GooglePixel/google-pixel-1.jpg" alt="Phone"></li>
-        <li><img src="./images/laptop/HpLaptop/hp-1.jpg" alt="laptop"></li>
+            <section>
+                <h2 id="cat">categories</h2>
+            </section>
+            <section id="imgcat">
+                <ul>
+                    <li><img src="./images/laptop/LenovoLaptop/lenovo-1.jpg"
+                            alt="labtop"></li>
+                    <li><img src="./images/phones/ApplePhone/iphone-1.jpg"
+                            alt="Phone"></li>
+                    <li><img
+                            src="./images/tablet/AppleTablet/apple-tablet-1.jpg"
+                            alt="Tablet"></li>
 
-    </ul>
-</section>
+                </ul>
+            </section>
+            <section id="top5">
+                <ul>
+                    <li><img src="./images/laptop/DellLaptop/dell-1.jpg"
+                            alt="labtop"></li>
+                    <li><img src="./images/phones/ApplePhone/iphone-1.jpg"
+                            alt="Phone"></li>
+                    <li><img
+                            src="./images/tablet/SamsungTablet/galaxy-tablet-1.jpg"
+                            alt="tablet"></li>
+                    <li><img
+                            src="./images/phones/GooglePixel/google-pixel-1.jpg"
+                            alt="Phone"></li>
+                    <li><img src="./images/laptop/HpLaptop/hp-1.jpg"
+                            alt="laptop"></li>
+
+                </ul>
+            </section>
 
 
-    </main>
+        </main>
 
 
-    <footer id ="footer">
-        <p>&copy;2021 Electro Review</p>
-        <section id ="social">
-        <ul >
-            <li><img src="./images/socialLogo/fb-icon.png" alt="FB"></li>
-            <li><img src="./images/socialLogo/twit-icon.png" alt="TWIT"></li>
-            <li><img src="./images/socialLogo/gp-icon.png alt="GP"></li>
-            <li><img src="./images/socialLogo/insta-icon.png"alt="INSTA"></li>
-        </ul>
-    </section>
-    </footer>
+        <footer id="footer">
+            <p>&copy;2021 Electro Review</p>
+            <section id="social">
+                <ul>
+                    <li><img src="./images/socialLogo/fb-icon.png" alt="FB"></li>
+                    <li><img src="./images/socialLogo/twit-icon.png" alt="TWIT"></li>
+                    <li><img src="./images/socialLogo/gp-icon.png alt="GP"></li>
+                    <li><img src="./images/socialLogo/insta-icon.png"
+                            alt="INSTA"></li>
+                </ul>
+            </section>
+        </footer>
+        <script src="../js/sliders.js"></script>
 
-    <script src="./js/app.js"></script>
-    <script src="./js/catalog.js"></script>
+        <script src="./js/app.js"></script>
+        <script src="./js/catalog.js"></script>
 
 
-</body>
+    </body>
 
 </html>

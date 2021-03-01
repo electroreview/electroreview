@@ -1,34 +1,34 @@
 'use strict';
 
 // Cart Constructor
-const Cart = function(items) {
+const Cart = function (items) {
     this.items = items;
 };
 
 // Create new CartItem and add it to this.item
-Cart.prototype.addItem = function(product, quantity) {
+Cart.prototype.addItem = function (product, quantity) {
     this.items.push(new CartItem(product, quantity));
 };
 
 // Save the contents of the carts to localStorage
-Cart.prototype.SaveToLocalStorage = function() {
+Cart.prototype.SaveToLocalStorage = function () {
     localStorage.setItem('cart', JSON.stringify(this.item));
 };
 
 // Remove one item from the cart
-Cart.prototype.removeItem = function(item) {
+Cart.prototype.removeItem = function (item) {
     const index = this.items.indexOf(item);
     this.items.splice(index, 1);
 };
 
 // Passing Parameters
-let CartItem = function(product, quantity) {
+let CartItem = function (product, quantity) {
     this.product = product;
     this.quantity = quantity;
 };
 
 // Product Constructor
-const Product = function(filePath, name) {
+const Product = function (filePath, name) {
     this.filePath = filePath;
     this.name = name;
     Product.allProducts.push(this);
