@@ -1,5 +1,5 @@
 html bodey {
-  width: 100%;
+    width: 100%;
 }
 
 .productImg img {
@@ -7,14 +7,15 @@ html bodey {
     height: 400px;
 }
 
-#inputReview {
-    width: 20%;
+
+/* #inputReview {
+    width: 50%;
     height: 100px;
 }
 
 form #subReview {
     margin: 50px;
-}
+} */
 
 .dot {
     cursor: pointer;
@@ -33,8 +34,6 @@ form #subReview {
 }
 
 .fade {
-    /* -webkit-animation-name: fade; */
-    /* -webkit-animation-duration: 1.5s; */
     animation-name: fade;
     animation-duration: 1.5s;
 }
@@ -71,7 +70,6 @@ form #subReview {
 
 .next {
     right: -30px;
-    /* border-radius: 3px 0 0 3px; */
 }
 
 .prev,
@@ -136,11 +134,10 @@ table td {
 }
 
 .addToCart {
-    background-color: #c05296;
+    background-color: #fac0bf;
     border: none;
     color: rgb(59, 59, 59);
-    padding: 15px 32px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -154,285 +151,292 @@ table td {
     justify-content: space-around;
 }
 
+
 /* product css */
 
 main h2 {
-
-  font-size: 70px;
-  font-style: italic;
-  font-family: "Times New Roman", Times, serif;
-  margin-bottom: 15px;
-  text-align: center;
-}
-main ul li {
-  display: inline-block;
-  padding: 70px;
-}
-.card {
-  background-color: #fffffe;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-.index-img-slider img {
-  width: 100%;
-  height: 500px;
-}
-
-.index-img-slider {
-  display: flex;
-  flex-direction: column;
-}
-.img-arrow {
-  position: relative;
-}
-.prevIndex,
-.nextIndex {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: rgb(105, 170, 255);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s eacse;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.nextIndex {
-  right: 0;
-}
-
-.dotIndix {
-  position: absolute;
-  bottom: 2%;
-  left: 45%;
-}
-
-    font-size: 50px;
+    font-size: 70px;
     font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     margin-bottom: 15px;
     text-align: center;
 }
 
 main ul li {
     display: inline-block;
+    padding: 70px;
+}
 
-      padding: 70px;
-    }
-    .card {
-      background-color: #fffffe;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
+.card {
+    background-color: #fffffe;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.index-img-slider img {
+    width: 100%;
+    height: 500px;
+}
+
+.index-img-slider {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-arrow {
+    position: relative;
+}
+
+.prevIndex,
+.nextIndex {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(105, 170, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s eacse;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.nextIndex {
+    right: 0;
+}
+
+.dotIndix {
+    position: absolute;
+    bottom: 2%;
+    left: 45%;
+}
+
+main ul li {
+    display: inline-block;
+    padding: 70px;
+}
+
+.card {
+    background-color: #fffffe;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 
 /*     
  //////////added    */
-    
- body,
- html {
-   height: 100%;
-   width: 100%;
- }
- 
- body {
-   background-image: linear-gradient(to top right, #fff, #ccc);
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
- }
- 
- /* Specifically Targeting the Main Header (not to be confused with headers within cards) */
- 
- body > header {
-   background: #062f4f;
-   border-bottom: 1px solid #ddd;
-   overflow: hidden;
-   padding: 0.5em 5em;
- }
- 
- body > header:after {
-   content: '';
-   position: fixed;
-   top: -10px;
-   left: 0;
-   width: 100%;
-   height: 10px;
-   z-index: 100;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
- }
- 
- body > header nav {
-   float: right;
-   line-height: 2.5em;
- }
- 
- body > header nav li {
-   display: inline-block;
- }
- 
- body > header nav li a {
-   color: #eee;
-   padding: 0 0.5em;
-   text-decoration: none;
- }
- 
- #itemCount {
-   color: #ccc;
-   font-size: 0.75em;
-   line-height: 1em;
-   margin-left: -0.5em;
- }
- 
- body > header h1 {
-   float: left;
-   font-size: 2.5em;
-   color: #fff;
-   text-shadow: -1px -1px 1px #666, 1px 1px 1px #000;
-   opacity: 0.75;
- }
- 
- /* Main Content */
- 
- /* Note the height calculation -- that's to keep the footer at the bottom */
- 
- main {
-   background: #fff;
-   border: 1px inset #ccc;
-   border-top-left-radius: 6px;
-   border-top-right-radius: 6px;
-   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-   line-height: 1.5em;
-   margin: 1.5em 1.5em 2.5em;
-   min-height: calc(100% - 9.5em);
-   height: auto !important;
-   text-shadow: white -1px 1px;
- }
- 
- /* Footer Styling and sticking to the bottom */
- 
- footer {
-   background: #eee;
-   border-top: 1px solid #ccc;
-   color: #666;
-   display: block;
-   height: 1.5em;
-   padding: 0.5em 5em;
-   text-align: center;
- }
- 
- /* Generic Deck and Card Styles */
- 
- .deck {
-   overflow: hidden;
- }
- 
- .card {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
- }
- 
- .deck.col-2 .card {
-   float: left;
-   width: 45%;
- }
- 
- /* Card styles specific to this application */
- 
- .card header {
-   background: #0011ff;
-   border-top-left-radius: 6px;
-   border-top-right-radius: 6px;
-   color: #eee;
-   opacity: 0.8;
-   padding: 0.5em;
-   text-align: center;
-   text-shadow: none;
- }
- 
- /* Styles for the order form and summary on the main page */
- 
- legend {
-   display: none;
- }
- 
- form {
-   margin: auto;
-   width: 50%;
- }
- 
- input[type='number'],
- select {
-   height: 1.75em;
-   width: 100%;
- }
- 
- input[type='submit'] {
-   float: right;
- }
- 
- label {
-   display: block;
-   margin-bottom: 1em;
- }
- 
- label span {
-   display: block;
-   padding-bottom: 0.25em;
- }
- 
- .card#cartContents:empty {
-   display: none;
- }
- 
- .card#cartContents {
-   background: #f5f5f5;
-   padding: 1.5em;
-   box-shadow: 0 3px 2px #777;
- }
- 
- /* Styles for the table on the cart page */
- 
- #cart {
-   border-collapse: collapse;
-   margin: auto;
-   width: 65%;
- }
- 
- #cart thead tr th {
-   color: #777;
-   border-bottom: 3px solid #062f4f;
-   font-weight: bold;
-   padding: 0.5em 1em;
- }
- 
- #cart tr td {
-   border-bottom: 1px solid #062f4f;
-   border-collapse: none;
-   color: #777;
-   padding: 0.5em 1em;
-   text-align: center;
-   width: auto;
- }
- 
- #cart tr td:last-child,
- #cart tr th:last-child {
-   text-align: left;
-   width: 100%;
- }
- 
- #cart tr td:first-child {
-   color: red;
-   cursor: pointer;
- }
- 
- #itemImg{
-   width: 100px;
-   height:100px;
- }
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: linear-gradient(to top right, #fff, #ccc);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body>header {
+    background: #00509D;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+body>header:after {
+    content: '';
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+body>header nav {
+    float: right;
+    line-height: 2.5em;
+}
+
+body>header nav li {
+    display: inline-block;
+}
+
+body>header nav li a {
+    color: #eee;
+    padding: 0 0.5em;
+    text-decoration: none;
+}
+
+#itemCount {
+    color: #ccc;
+    font-size: 0.75em;
+    line-height: 1em;
+    margin-left: -0.5em;
+}
+
+body>header h1 {
+    float: left;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: -1px -1px 1px #666, 1px 1px 1px #000;
+    opacity: 0.75;
+}
+
+
+/* Main Content */
+
+
+/* Note the height calculation -- that's to keep the footer at the bottom */
+
+main {
+    background: #fff;
+    border: 1px inset #ccc;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    line-height: 1.5em;
+    margin: 1.5em 1.5em 2.5em;
+    min-height: calc(100% - 9.5em);
+    height: auto !important;
+    text-shadow: white -1px 1px;
+}
+
+
+/* Footer Styling and sticking to the bottom */
+
+footer {
+    background: #eee;
+    border-top: 1px solid #ccc;
+    color: #666;
+    display: block;
+    height: 1.5em;
+    padding: 0.5em 5em;
+    text-align: center;
+}
+
+
+/* Generic Deck and Card Styles */
+
+.deck {
+    overflow: hidden;
+}
+
+.card {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.deck.col-2 .card {
+    float: left;
+    width: 45%;
+}
+
+
+/* Card styles specific to this application */
+
+
+/* .card header {
+    background: #0011ff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #eee;
+    opacity: 0.8;
+    padding: 0.5em;
+    text-align: center;
+    text-shadow: none;
+} */
+
+
+/* Styles for the order form and summary on the main page */
+
+legend {
+    display: none;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+}
+
+input[type='number'],
+select {
+    height: 1.75em;
+    width: 100%;
+}
+
+input[type='submit'] {
+    float: right;
+}
+
+label {
+    display: block;
+    margin-bottom: 1em;
+}
+
+label span {
+    display: block;
+    padding-bottom: 0.25em;
+}
+
+.card#cartContents:empty {
+    display: none;
+}
+
+.card#cartContents {
+    background: #f5f5f5;
+    padding: 1.5em;
+    box-shadow: 0 3px 2px #777;
+}
+
+
+/* Styles for the table on the cart page */
+
+#cart {
+    border-collapse: collapse;
+    margin: auto;
+    width: 65%;
+}
+
+#cart thead tr th {
+    color: #777;
+    border-bottom: 3px solid #062f4f;
+    font-weight: bold;
+    padding: 0.5em 1em;
+}
+
+#cart tr td {
+    border-bottom: 1px solid #062f4f;
+    border-collapse: none;
+    color: #777;
+    padding: 0.5em 1em;
+    text-align: center;
+    width: auto;
+}
+
+#cart tr td:last-child,
+#cart tr th:last-child {
+    text-align: left;
+    width: 100%;
+}
+
+#cart tr td:first-child {
+    color: rgb(8, 12, 243);
+    cursor: pointer;
+}
+
+#itemImg {
+    width: 100px;
+    height: 100px;
+}
+
+
 /*  
  #message {
    font-size: xx-large;
@@ -452,49 +456,87 @@ main ul li {
    }
  }  
   */
+
+
 /* product css */
-*{
-  box-sizing: border-box;
+
+* {
+    box-sizing: border-box;
 }
-.column{
-  float:left;
-  width: 33.33%;
-  padding: 5px;
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
 }
-.row::after{
-  content:"";
-  clear: both;
-  display: table;
+
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
 }
+
 main h2 {
-  text-align: center;
-  font-size: 40px;
-  font-family: 'Times New Roman', Times, serif;
-  font-style: italic;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 
 
 /* header */
-header{
-  width:auto;
+
+header {
+    width: auto;
 }
-#product{
-  float: left;
+
+#product {
+    float: left;
 }
+
 #list {
-  float: right;
-  padding-left:20cm;
+    float: right;
+    padding-left: 20cm;
 }
+
 
 /* footer */
+
 footer p {
-  float: left;
-}
-footer ul  {
-  float: right;
-  padding-left:20cm;
-}
-footer ul li {
-display: inline-block;
+    float: left;
+    padding: 20px;
 }
 
+footer ul {
+    float: right;
+    padding-left: 20cm;
+    padding: 20px;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer {
+    background-color: #00509D;
+}
+
+#logo {
+    height: 100px;
+}
+
+#aboutH1 {
+    font-family: cursive;
+    font-size: large;
+    text-align: center;
+    color: blue;
+}
+
+#Pabout {
+    text-align: center;
+    color: rgb(5, 5, 87);
+    font-size: small;
+    font-family: cursive;
+}
