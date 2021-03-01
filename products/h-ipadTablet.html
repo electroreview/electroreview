@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Ipad-tablet</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="https://kit.fontawesome.com/c1a4e17460.js" crossorigin="anonymous"></script>
 
-
-
+    <head>
+      
+        <title>Ipad-tablet</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://kit.fontawesome.com/c1a4e17460.js"
+            crossorigin="anonymous"></script>
 </head>
 
 
 <body>
 
-    <header>
-        <h1>Electro Review</h1>
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About Us</a></li>
-                <li><a href="../product.html">Products</a></li>
-                <li><a href="../cart.html">Cart</a><span id="itemCount"></span></li>
-            </ul>
-        </nav>
+        <header>
+            <nav id="product">
+                <img src="../assets/logo.png" width="150px" alt="logo">
+    
+                <ul id="list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./cart.html">Cart</a><span id='itemCount'></span></li>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+            <div class="pic-spics">
+                <div class="imgsAndTable">
+                    <section class='productImg'>
+                        <img class="mySlides fade"
+                            src="../assets/tablet/AppleTablet/apple-tablet-1.jpg"
+                            />
+                        <img class="mySlides fade"
+                            src="../assets/tablet/AppleTablet/apple-tablet-2.jpg"
+                            />
+                        <img class="mySlides fade"
+                            src="../assets/tablet/AppleTablet/apple-tablet-3.jpg"
+                            />
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </section>
+                </div>
 
     </header>
     <main>
@@ -138,15 +161,21 @@
         <p>&copy;2021 Electro Review</p>
         <section id="social">
             <ul>
-                <li><img src="../assets/socialLogo/fb-icon.png" alt="Facebook"></li>
-                <li><img src="../assets/socialLogo/twit-icon.png" alt="Twitter"></li>
-                <li><img src="../assets/socialLogo/insta-icon.png" alt="Instagram"></li>
+
+                <li><img src="../assets/socialLogo/fb-icon.png" alt="FB"></li>
+                <li><img src="../assets/socialLogo/twit-icon.png" alt="TWIT"></li>
+
+                <li>
+                    <img src="../assets/socialLogo/gp-icon.png" alt="GP">
+                </li>
+                <li><img src="../assets/socialLogo/insta-icon.png" alt="INSTA"></li>
             </ul>
         </section>
-    </footer>
-    <script src="../js/app.js"></script>
-    <script src="../js/catalog.js"></script>
-    <script src="../js/sliders.js"></script>
-</body>
 
-</html>
+    </footer>
+      <script src="../js/app.js"></script>
+      <script src="../js/catalog.js"></script>
+      <script src="../js/sliders.js"></script>
+    </body>
+    </html>
+    

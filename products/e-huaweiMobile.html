@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+     
+
     <title>huawei-phone</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -15,16 +16,19 @@
 <body>
 
     <header>
-        <h1>Electro Review</h1>
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About Us</a></li>
-                <li><a href="../product.html">Products</a></li>
-                <li><a href="../cart.html">Cart</a><span id="itemCount"></span></li>
-            </ul>
-        </nav>
+      <nav id="product">
+        <img src="../assets/logo.png" width="150px" alt="logo">
+
+        <ul id="list">
+          <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./cart.html">Cart</a><span id='itemCount'></span></li>
+        </ul>
+    </nav>
+
+      
 
     </header>
     <main>
@@ -44,106 +48,101 @@
                 </section>
             </div>
 
-
-            <section>
-                <div class="model">
-                    <h4 class="spic-h4">Product Name: Hawawei mobile</h4>
-
-
-                    <h6>Model No: Hawawei P40 4G </h6>
-                    <h5>480 JOD</h5>
+            <div class="model">
+                <h4>Decsription</h4>
+                <p> Announced 2021, February 26</p>
+            </div>
+        
+            <table>
+                <th>Specification</th>
+                <th>Property</th>
+                <tr>
+                    <td>Color</td>
+                    <td>Frost Silver, Dark Blue </td>
+                </tr>
+                <tr>
+                    <td>Additional Info</td>
+                    <td>3 Camera  , Bluetooth ,LED flash </td>
+                </tr>
+                <tr>
+                    <td>Warranty</td>
+                    <td>2 Year</t>
+                </tr>
+                <tr>
+                    <td>Processor</td>
+                    <td>Kirin 990 (7 nm+)</td>
+                </tr>
+                <tr>
+                    <td>Memory RAM</td>
+                    <td> 128GB 8GB RAM </td>
+                </tr>
+                <tr>
+                    <td>Screen Size (Inch)</td>
+                    <td> 6.1 inches 1080 x 2340 pixels</td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>128 GB</td>
+                </tr>
+            </table>
+            <section class="deck col-2">
+                <div class="card">
+                  <div class="copy">
+                    <form id="catalog">
+                      <fieldset>
+                        <legend>SHOP NOW!</legend>
+                        <label>
+                          <span>Item</span>
+                          
+                          <select id="items" disabled>
+                            <option value="Huawei phone" selected>Huawei phone</option>
+                          </select>
+                        </label>
+                        <label>
+                          <span>Quantity</span>
+                          <input id="quantity" type="number" />
+                        </label>
+                        <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO CART</button>
+                      </fieldset>
+                    </form>
+                  </div>
                 </div>
-                <div class="model">
-                    <h4>Decsription</h4>
-                    <p> Announced 2021, February 26</p>
-                </div>
-
-                <table>
-                    <th>Specification</th>
-                    <th>Property</th>
-                    <tr>
-                        <td>Color</td>
-                        <td>Frost Silver, Dark Blue </td>
-                    </tr>
-                    <tr>
-                        <td>Additional Info</td>
-                        <td>3 Camera , Bluetooth ,LED flash </td>
-                    </tr>
-                    <tr>
-                        <td>Warranty</td>
-                        <td>2 Year</t>
-                    </tr>
-                    <tr>
-                        <td>Processor</td>
-                        <td>Kirin 990 (7 nm+)</td>
-                    </tr>
-                    <tr>
-                        <td>Memory RAM</td>
-                        <td> 128GB 8GB RAM </td>
-                    </tr>
-                    <tr>
-                        <td>Screen Size (Inch)</td>
-                        <td> 6.1 inches 1080 x 2340 pixels</td>
-                    </tr>
-                    <tr>
-                        <td>Storage</td>
-                        <td>128 GB</td>
-                    </tr>
-                </table>
-                <section class="deck col-2">
-                    <div class="card">
-                        <div class="copy">
-                            <form id="catalog">
-                                <fieldset>
-                                    <legend>SHOP NOW!</legend>
-                                    <label>
-                    <span>Item</span>
-
-                    <select id="items" disabled>
-                      <option value="Huawei phone" selected>Huawei phone</option>
-                    </select>
-                  </label>
-                                    <label>
-                    <span>Quantity</span>
-                    <input id="quantity" type="number" />
-                  </label>
-                                    <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO CART</button>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="card" id="cartContents"></div>
-                </section>
-            </section>
-        </div>
-
-        <section>
-            <form>
-                <label for="userName">User Name </label>
-                <input type="text" id="name" name="userName"><br>
-                <textarea id="textReview" rows="5" placeholder="please write your review here!"></textarea>
-                <input type="button" value="submit" onclick="updateReview()" />
-                <br />
-                <p id="as"></p>
-                <p id="na"></p>
-            </form>
+                <div class="card" id="cartContents"></div>
+              </section>
         </section>
-    </main>
+    </div>
+    
+    <section>
+        <form>
+            <label for="userName">User Name </label>
+            <input type="text" id="name" name="userName"><br>
 
+            <label for="inputReview">please write your review</label>
+            <input type="text" id="inputReview"><br> <input id="subReview" type="submit" value="Submit">
+            <button class="review"> <i class="fas fa-cart-plus"> </i> Submit your review</button>
+        </form>
+    </section>
+        </main>
+      
 
-    <footer id="footer">
-        <p>&copy;2021 Electro Review</p>
-        <section id="social">
-            <ul>
-                <li><img src="../assets/socialLogo/fb-icon.png" alt="Facebook"></li>
-                <li><img src="../assets/socialLogo/twit-icon.png" alt="Twitter"></li>
-                <li><img src="../assets/socialLogo/insta-icon.png" alt="Instagram"></li>
-            </ul>
-        </section>
-    </footer>
-    <script src="../js/app.js"></script>
-    <script src="../js/catalog.js"></script>
-    <script src="../js/sliders.js"></script>
+        <footer id="footer">
+          <p>&copy;2021 Electro Review</p>
+          <section id="social">
+              <ul>
+                  <li><img src="../assets/socialLogo/fb-icon.png" alt="FB"></li>
+                  <li><img src="../assets/socialLogo/twit-icon.png" alt="TWIT"></li>
+  
+                  <li>
+                      <img src="../assets/socialLogo/gp-icon.png" alt="GP">
+                  </li>
+                  <li><img src="../assets/socialLogo/insta-icon.png" alt="INSTA"></li>
+              </ul>
+          </section>
+  
+      </footer>
+  <script src="../js/app.js"></script>
+  <script src="../js/catalog.js"></script>
+  <script src="../js/sliders.js"></script>
 </body>
-
 </html>
+
