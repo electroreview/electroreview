@@ -27,7 +27,9 @@ function handleSubmit(event) {
 }
 
 function confirmMsg() {
+
     let sectionEl=document.createElement('section');
+
     sectionEl.id = 'message';
     sectionEl.textContent = 'Added to Cart!';
 }

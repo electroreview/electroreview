@@ -18,13 +18,18 @@
 
     </header>
     <main>
-
-        <section class='productImg'>
-            <img src="../images/tablet/samsung tablet/galaxy-tablet-1.jpg" />
-            <img src="../images/tablet/samsung tablet/galaxy-tablet-2.jpg" />
-            <img src="../images/tablet/samsung tablet/galaxy-tablet-3.jpg" />
-
-
+<div class="imgsAndTable">        
+    <section class='productImg'>
+            <img class="mySlides fade" src="../images/tablet/SamsungTablet/galaxy-tablet-1.jpg" />
+            <img class="mySlides fade" src="../images/tablet/SamsungTablet/galaxy-tablet-2.jpg" />
+            <img class="mySlides fade" src="../images/tablet/SamsungTablet/galaxy-tablet-3.jpg" />
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
 
         </section>
         <section>
@@ -69,8 +74,9 @@
             </table>
 
         </section>
-
+</div>
         <section>
+            
             <form>
                 <lable for="userName">please enter your full Name
                 </lable><input type="text" id="name" name="userName"><br><label for="inputReview">please write your
@@ -83,6 +89,7 @@
         </section>
     </main>
     <footer></footer>
+    <script src="../js/sliders.js"></script>
 
 </body>
 
