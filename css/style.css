@@ -151,26 +151,6 @@ table td {
 }
 
 
-/* product css */
-
-main h2 {
-    font-size: 50px;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-main ul li {
-    display: inline-block;
-
-      padding: 70px;
-    }
-    .card {
-      background-color: #fffffe;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
 /*     
  //////////added    */
     
@@ -395,4 +375,48 @@ main ul li {
    }
  }  
   */
+/* product css */
+*{
+  box-sizing: border-box;
+}
+.column{
+  float:left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after{
+  content:"";
+  clear: both;
+  display: table;
+}
+main h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
 
+
+/* header */
+header{
+  width:auto;
+}
+#product{
+  float: left;
+}
+#list {
+  float: right;
+  padding-left:20cm;
+}
+
+/* footer */
+footer p {
+  float: left;
+}
+footer ul  {
+  float: right;
+  padding-left:20cm;
+}
+footer ul li {
+display: inline-block;
+}
