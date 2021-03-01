@@ -8,6 +8,8 @@
     <title>p-laptop</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/c1a4e17460.js" crossorigin="anonymous"
+    ></script>
 </head>
 
 
@@ -19,87 +21,72 @@
     </header>
 
     <main>
-        <section class='productImg'>
-            <img src="../images/laptop/hplaptop/hp-1.jpg" />
-            <img src="../images/laptop/hp laptop/hp-2.jpg" />
-            <img src="../images/laptop/hp laptop/hp-3.jpg" />
+        <div class="pic-spics">
+            <div class="imgsAndTable">        
+                <section class='productImg'>
+                    <img class="mySlides fade" src="../images/laptop/HpLaptop/hp-1.jpg" />
+                    <img class="mySlides fade" src="../images/laptop/HpLaptop/hp-2.jpg" />
+                    <img class="mySlides fade" src="../images/laptop/HpLaptop/hp-3.jpg" />
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                </section>
+            </div>
+        
+<!-------------------------- Table of Specification ------------------------->
 
-            <h1 id="itemName">HP Pavilion Laptop</h1>
-            <h1 id="itemSubName">15-eg0002ne 11Gen</h1>
-            <h1 id="itemPrice">Price: 1500$</h1>
-        </section>
+    <section>
+        <div class="model">
+            <h4 class="spic-h4">Product Name: HP Pavilion</h4>
+            <h6>Model No: 15-eg0002ne 11Gen</h6>
+            <h5> 1500 JOD</h5>
+        </div>
+        <div class="model">
+            <h4>Decsription</h4>
+            <p>Core i7, Windows 10</p>
+        </div>
+    <section>
+        <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO CART</button>
+    </section>
         <table>
-
+            <th>Specification</th>
+            <th>Property</th>
             <tr>
-                <th></th>
-                <td>
-
-                    description
-                </td>
-            </tr>
-
-
-            <tr>
-                <th>(1)</th>
-                <td>
-
-                    Windows 10 Home
-                </td>
-            </tr>
-
-            <tr>
-                <th>(2)</th>
-                <td>
-                    Core i7 up to 4.7GHz 12M Cash 4-Cores
-
-                </td>
+                <td>Color</td>
+                <td>Silver</td>
             </tr>
             <tr>
-                <th>(3)</th>
-                <td>
-                    16GB RAM DDR4 , 1TB PCIe® NVMe™ M.2 SSD ,me
-
-                </td>
+                <td>Additional Info</td>
+                <td>Camera Wireless , Bluetooth , Windows 10 Home</td>
             </tr>
-
             <tr>
-                <th>(4)</th>
-                <td>
-                    15.6" FHD IPS 250 nits Display
-
-                </td>
+                <td>Warranty</td>
+                <td>1 Year</t>
             </tr>
-
             <tr>
-                <th>(5)</th>
-                <td>
-                    Nvidia GeForce M450 2GB
-                </td>
+                <td>Processor</td>
+                <td>Core i7 up to 4.7GHz 12M Cash 4-Cores</td>
             </tr>
-
-
             <tr>
-                <th>(6)</th>
-                <td>
-                    Camera Wireless
-                </td>
+                <td>Memory RAM</td>
+                <td>16 GB RAM DDR4</td>
             </tr>
-
+            <tr>
+                <td>Screen Size (Inch)</td>
+                <td>15.6" FHD IPS 250 nits Display</td>
+            </tr>
+            <tr>
+                <td>Storage</td>
+                <td>1TB PCIe® NVMe™ M.2 SSD</td>
+            </tr>
         </table>
-        </section>
+    </section>
+        </div>
 
-        <section id='userReview'>
-            <h2>Review</h2>
-            <table>
-                <tr>
-                    <th>Nada AlYousef</th>
-                    <td>
-                        <p> Multi-core is designed to improve performance of certain software products. Not all customers or software applications will necessarily benefit from use of this technology. Performance and clock frequency will vary depending onapplication
-                            workload and your hardware and software configurations.
-                    </td>
-                </tr>
-            </table>
-        </section>
 
         <section>
             <form>
@@ -111,7 +98,14 @@
             </form>
         </section>
 
-        ,
+        <section>
+            <button>Add to cart</button>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="../js/sliders.js"></script>
+
+
         <aside id='addNum'>
             <div>
                 <span>Quantity</span>
