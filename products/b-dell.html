@@ -13,8 +13,10 @@
 <body>
 
     <header>
+
         <nav id="product">
             <img src="../assets/logo.png" width="150px" alt="logo">
+
 
             <ul id="list">
                 <li><a href="./index.html">Home</a></li>
@@ -42,7 +44,7 @@
 
                 </section>
             </div>
-<!-------------------------- Table of Specification ------------------------->
+            <!-------------------------- Table of Specification ------------------------->
 
             <section>
                 <div class="model">
@@ -55,89 +57,91 @@
                     <h4>Decsription</h4>
                     <p>Core i5 Laptop 2-in-1 Touch, Windows 10 Home</p>
                 </div>
-                
-                    <table>
-                        <th>Specification</th>
-                        <th>Property</th>
-                        <tr>
-                            <td>Color</td>
-                            <td>Black</td>
-                        </tr>
-                        <tr>
-                            <td>Additional Info</td>
-                            <td>Windows 10 Home</td>
-                        </tr>
-                        <tr>
-                            <td>Warranty</td>
-                            <td>1 Year</td>
-                        </tr>
-                        <tr>
-                            <td>Processor</td>
-                            <td>Core i5 Laptop</td>
-                        </tr>
-                        <tr>
-                            <td>Memory RAM</td>
-                            <td>8 GB</td>
-                        </tr>
-                        <tr>
-                            <td>Screen Size (Inch)</td>
-                            <td>13.3" IPS Full HD Touch Screen Anti-Reflective</td>
-                        </tr>
-                        <tr>
-                            <td>Storage</td>
-                            <td>256 GB PCIe® NVMe™ M.2 SSD</td>
-                        </tr>
-                        <tr>
-                            <td>Graphic Card</td>
-                            <td>Intel® UHD Graphic Card</td>
-                        </tr>
-                    </table>
+
+                <table>
+                    <th>Specification</th>
+                    <th>Property</th>
+                    <tr>
+                        <td>Color</td>
+                        <td>Black</td>
+                    </tr>
+                    <tr>
+                        <td>Additional Info</td>
+                        <td>Windows 10 Home</td>
+                    </tr>
+                    <tr>
+                        <td>Warranty</td>
+                        <td>1 Year</td>
+                    </tr>
+                    <tr>
+                        <td>Processor</td>
+                        <td>Core i5 Laptop</td>
+                    </tr>
+                    <tr>
+                        <td>Memory RAM</td>
+                        <td>8 GB</td>
+                    </tr>
+                    <tr>
+                        <td>Screen Size (Inch)</td>
+                        <td>13.3" IPS Full HD Touch Screen Anti-Reflective</td>
+                    </tr>
+                    <tr>
+                        <td>Storage</td>
+                        <td>256 GB PCIe® NVMe™ M.2 SSD</td>
+                    </tr>
+                    <tr>
+                        <td>Graphic Card</td>
+                        <td>Intel® UHD Graphic Card</td>
+                    </tr>
+                </table>
 
                 <section class="deck col-2">
                     <div class="card">
                         <div class="copy">
-                          <form id="catalog">
-                            <fieldset>
-                              <legend>SHOP NOW!</legend>
-                              <label>
-                                <span>Item</span>
-                                
-                                <select id="items" disabled>
-                                  <option value="dell laptop" selected>dell Laptop</option>
-                                </select>
-                              </label>
-                              <label>
-                                <span>Quantity</span>
-                                <input id="quantity" type="number" />
-                              </label>
-                              <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO CART</button>
-                            </fieldset>
-                          </form>
+                            <form id="catalog">
+                                <fieldset>
+                                    <legend>SHOP NOW!</legend>
+                                    <label>
+                                        <span>Item</span>
+
+                                        <select id="items" disabled>
+                                            <option value="dell laptop" selected>dell Laptop</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        <span>Quantity</span>
+                                        <input id="quantity" type="number" />
+                                    </label>
+                                    <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO CART</button>
+                                </fieldset>
+                            </form>
                         </div>
-                      </div>
-                      <div class="card" id="cartContents"></div>
-                    </section>
-              </section>
-          </div>
-  
+                    </div>
+                    <div class="card" id="cartContents"></div>
+                </section>
+            </section>
+        </div>
 
-<!-------------------------------------------------- Form--------------------------------- -->
-<section>
-    <form>
-        <label for="userName">User Name </label>
-        <input type="text" id="name" name="userName"><br>
 
-        <label for="inputReview">please write your review</label>
-        <input type="text" id="inputReview"><br> <input id="subReview" type="submit" value="Submit">
-        <button class="review"> <i class="fas fa-cart-plus"> </i> Submit your review</button>
-    </form>
-</section>
+        <!-------------------------------------------------- Form--------------------------------- -->
+        <section>
+            <form>
+                <label for="userName">User Name </label>
+                <input type="text" id="name" name="userName"><br>
+                <textarea id="textReview" rows="5" placeholder="please write your review here!"></textarea>
+                <input type="button" value="submit" onclick="updateReview()" />
+                <br />
+                <p id="as"></p>
+                <p id="na"></p>
+            </form>
+        </section>
 
     </main>
     <footer id="footer">
         <p>&copy;2021 Electro Review</p>
         <section id="social">
             <ul>
+
                 <li><img src="../assets/socialLogo/fb-icon.png" alt="FB"></li>
                 <li><img src="../assets/socialLogo/twit-icon.png" alt="TWIT"></li>
 
@@ -154,3 +158,4 @@
       <script src="../js/sliders.js"></script>
     </body>
     </html>
+

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
     <head>
         
         <title>huwaei-tablet</title>
@@ -9,10 +10,11 @@
         <script src="https://kit.fontawesome.com/c1a4e17460.js"
             crossorigin="anonymous"></script>
 
-    </head>
+</head>
 
 
-    <body>
+<body>
+
 
         <header>
             <nav id="product">
@@ -26,37 +28,31 @@
                 </ul>
             </nav>
 
-        </header>
-        <main>
+
+    </header>
+    <main>
+        <div class="pic-spics">
             <div class="pic-spics">
-                <div class="pic-spics">
-                    <div class="imgsAndTable">
-                        <section class='productImg'>
-                            <img class="mySlides fade"
-                                src="../assets/tablet/HuaweiTablet/huawei-tablet-1.jpg"
-                                />
-                            <img class="mySlides fade"
-                                src="../assets/tablet/HuaweiTablet/huawei-tablet-2.jpg"
-                                />
-                            <img class="mySlides fade"
-                                src="../assets/tablet/HuaweiTablet/huawei-tablet-3.jpg"
-                                />
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            <div style="text-align:center">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
-                                <span class="dot" onclick="currentSlide(3)"></span>
-                            </div>
-                        </section>
-                    </div>
-               
+                <div class="imgsAndTable">
+                    <section class='productImg'>
+                        <img class="mySlides fade" src="../assets/tablet/HuaweiTablet/huawei-tablet-1.jpg" />
+                        <img class="mySlides fade" src="../assets/tablet/HuaweiTablet/huawei-tablet-2.jpg" />
+                        <img class="mySlides fade" src="../assets/tablet/HuaweiTablet/huawei-tablet-3.jpg" />
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </section>
+                </div>
+
 
                 <!-------------------------- Table of Specification ------------------------->
                 <section>
                     <div class="model">
-                        <h4 class="spic-h4">Product Name:HUAWEI
-                            MediaPad T5
+                        <h4 class="spic-h4">Product Name:HUAWEI MediaPad T5
                         </h4>
                         <h6>Model No:C17381 (Wi-Fi/Cellular)</h6>
                         <h5> 190JOD</h5>
@@ -65,7 +61,7 @@
                         <h4>Decsription</h4>
                         <p> Android with some additional change</p>
                     </div>
-                    
+
                     <table>
                         <th>Specification</th>
                         <th>Property</th>
@@ -75,8 +71,7 @@
                         </tr>
                         <tr>
                             <td>Additional Info</td>
-                            <td>Camera Wireless , Bluetooth
-                                ,Micro-SIM </td>
+                            <td>Camera Wireless , Bluetooth ,Micro-SIM </td>
                         </tr>
                         <tr>
                             <td>Warranty</td>
@@ -84,8 +79,7 @@
                         </tr>
                         <tr>
                             <td>Processor</td>
-                            <td>Kirin 659 Processor Octa-core 2.36
-                                GHz
+                            <td>Kirin 659 Processor Octa-core 2.36 GHz
                             </td>
                         </tr>
                         <tr>
@@ -104,51 +98,53 @@
                     </table>
                     <section class="deck col-2">
                         <div class="card">
-                          <div class="copy">
-                            <form id="catalog">
-                              <fieldset>
-                                <legend>SHOP NOW!</legend>
-                                <label>
-                                  <span>Item</span>
-                                  
-                                  <select id="items" disabled>
-                                    <option value="Huawei Tablet" selected>Huawei Tablet</option>
-                                  </select>
-                                </label>
-                                <label>
-                                  <span>Quantity</span>
-                                  <input id="quantity" type="number" />
-                                </label>
-                                <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO CART</button>
-                              </fieldset>
-                            </form>
-                          </div>
+                            <div class="copy">
+                                <form id="catalog">
+                                    <fieldset>
+                                        <legend>SHOP NOW!</legend>
+                                        <label>
+                                            <span>Item</span>
+
+                                            <select id="items" disabled>
+                                                <option value="Huawei Tablet" selected>Huawei Tablet</option>
+                                            </select>
+                                        </label>
+                                        <label>
+                                            <span>Quantity</span>
+                                            <input id="quantity" type="number" />
+                                        </label>
+                                        <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO
+                                            CART</button>
+                                    </fieldset>
+                                </form>
+                            </div>
                         </div>
                         <div class="card" id="cartContents"></div>
-                      </section>
+                    </section>
                 </section>
             </div>
-    
-    
+
+
             <section>
                 <form>
                     <label for="userName">User Name </label>
                     <input type="text" id="name" name="userName"><br>
-    
-                    <label for="inputReview">please write your review</label>
-                    <input type="text" id="inputReview"><br> <input id="subReview" type="submit" value="Submit">
-                    <button class="review"> <i class="fas fa-cart-plus"> </i> Submit your review</button>
+                    <textarea id="textReview" rows="5" placeholder="please write your review here!"></textarea>
+                    <input type="button" value="submit" onclick="updateReview()" />
+                    <br />
+                    <p id="as"></p>
+                    <p id="na"></p>
                 </form>
             </section>
-    
-            
-    
+
+
+
     </main>
-    
     <footer id="footer">
         <p>&copy;2021 Electro Review</p>
         <section id="social">
             <ul>
+
                 <li><img src="../assets/socialLogo/fb-icon.png" alt="FB"></li>
                 <li><img src="../assets/socialLogo/twit-icon.png" alt="TWIT"></li>
 
@@ -165,4 +161,4 @@
       <script src="../js/sliders.js"></script>
     </body>
     </html>
-    
+   
