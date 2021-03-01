@@ -1,8 +1,8 @@
 'use strict';
 
-let mainEl = document.getElementsByTagName('main')[0];
-let sectionEl = document.createElement('section');
-mainEl.appendChild(sectionEl);
+//let mainEl = document.getElementsByTagName('main')[0];
+//let sectionEl = document.createElement('section');
+//mainEl.appendChild(sectionEl);
 
 // Set up an empty cart for use on this page.
 const cart = new Cart([]);
@@ -27,6 +27,9 @@ function handleSubmit(event) {
 }
 
 function confirmMsg() {
+
+    let sectionEl=document.createElement('section');
+
     sectionEl.id = 'message';
     sectionEl.textContent = 'Added to Cart!';
 }
