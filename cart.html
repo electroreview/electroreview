@@ -1,14 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <script src="./js/app.js"></script>
-    <script src="./js/cart.js"></script>
-</body>
+<html>
+    <head>
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>Electro Review</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+       <h1>Electro Review</h1>
+      <!-- <nav id ="index">
+        <img src="" alt="logo"> -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./product.html">Products</a></li>
+          <li><a href="cart.html">Cart</a><span id="itemCount"></span></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section class="deck col-1">
+          <div class="card">
+            <header>
+              <h1>Your Cart</h1>
+            </header>
+            <div class="copy">
+              <ol>
+                <li>Click the "X" next to any item to remove it from your cart</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+  
+        <section class="deck col-1">
+          <div id="cart-container" class="card">
+            <table id="cart">
+              <thead>
+                <tr>
+                  <th>Remove</th>
+                  <th>Quantity</th>
+                  <th>Item</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+              <tfoot></tfoot>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <footer id ="footer">
+        <p>&copy;2021 Electro Review</p>
+        <section id ="social">
+          <ul >
+              <li><img src="./assets/socialLogo/fb-icon.png" alt="Facebook"></li>
+              <li><img src="./assets/socialLogo/twit-icon.png" alt="Twitter"></li>
+              <li><img src="./assets/socialLogo/insta-icon.png"alt="Instagram"></li>
+          </ul>
+      </section>
+      </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
 </html>
