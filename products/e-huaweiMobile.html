@@ -3,7 +3,7 @@
 
 <head>
 
-     
+
 
     <title>huawei-phone</title>
     <link rel="stylesheet" href="../css/reset.css">
@@ -17,18 +17,18 @@
 
     <header>
 
-      <nav id="product">
-        <img src="../assets/logo.png" width="150px" alt="logo">
+        <nav id="product">
+            <img id="logo" src="../assets/logo.png" width="150px" alt="logo">
 
-        <ul id="list">
-          <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./products.html">Products</a></li>
-            <li><a href="./cart.html">Cart</a><span id='itemCount'></span></li>
-        </ul>
-    </nav>
+            <ul id="list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../product.html">Products</a></li>
+                <li><a href="../cart.html">Cart</a><span id='itemCount'></span></li>
+            </ul>
+        </nav>
 
-      
+
 
     </header>
     <main>
@@ -52,7 +52,7 @@
                 <h4>Decsription</h4>
                 <p> Announced 2021, February 26</p>
             </div>
-        
+
             <table>
                 <th>Specification</th>
                 <th>Property</th>
@@ -62,7 +62,7 @@
                 </tr>
                 <tr>
                     <td>Additional Info</td>
-                    <td>3 Camera  , Bluetooth ,LED flash </td>
+                    <td>3 Camera , Bluetooth ,LED flash </td>
                 </tr>
                 <tr>
                     <td>Warranty</td>
@@ -87,62 +87,62 @@
             </table>
             <section class="deck col-2">
                 <div class="card">
-                  <div class="copy">
-                    <form id="catalog">
-                      <fieldset>
-                        <legend>SHOP NOW!</legend>
-                        <label>
+                    <div class="copy">
+                        <form id="catalog">
+                            <fieldset>
+                                <legend>SHOP NOW!</legend>
+                                <label>
                           <span>Item</span>
                           
                           <select id="items" disabled>
                             <option value="Huawei phone" selected>Huawei phone</option>
                           </select>
                         </label>
-                        <label>
+                                <label>
                           <span>Quantity</span>
                           <input id="quantity" type="number" />
                         </label>
-                        <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO CART</button>
-                      </fieldset>
-                    </form>
-                  </div>
+                                <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO CART</button>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
                 <div class="card" id="cartContents"></div>
-              </section>
+            </section>
+            </section>
+        </div>
+
+        <section>
+            <form>
+                <label for="userName">User Name </label>
+                <input type="text" id="name" name="userName"><br>
+
+                <label for="inputReview">please write your review</label>
+                <input type="text" id="inputReview"><br> <input id="subReview" type="submit" value="Submit">
+                <button class="review"> <i class="fas fa-cart-plus"> </i> Submit your review</button>
+            </form>
         </section>
-    </div>
-    
-    <section>
-        <form>
-            <label for="userName">User Name </label>
-            <input type="text" id="name" name="userName"><br>
+    </main>
 
-            <label for="inputReview">please write your review</label>
-            <input type="text" id="inputReview"><br> <input id="subReview" type="submit" value="Submit">
-            <button class="review"> <i class="fas fa-cart-plus"> </i> Submit your review</button>
-        </form>
-    </section>
-        </main>
-      
 
-        <footer id="footer">
-          <p>&copy;2021 Electro Review</p>
-          <section id="social">
-              <ul>
-                  <li><img src="../assets/socialLogo/fb-icon.png" alt="FB"></li>
-                  <li><img src="../assets/socialLogo/twit-icon.png" alt="TWIT"></li>
-  
-                  <li>
-                      <img src="../assets/socialLogo/gp-icon.png" alt="GP">
-                  </li>
-                  <li><img src="../assets/socialLogo/insta-icon.png" alt="INSTA"></li>
-              </ul>
-          </section>
-  
-      </footer>
-  <script src="../js/app.js"></script>
-  <script src="../js/catalog.js"></script>
-  <script src="../js/sliders.js"></script>
+    <footer id="footer">
+        <p>&copy;2021 Electro Review</p>
+        <section id="social">
+            <ul>
+                <li><img src="../assets/socialLogo/fb-icon.png" alt="FB"></li>
+                <li><img src="../assets/socialLogo/twit-icon.png" alt="TWIT"></li>
+
+                <li>
+                    <img src="../assets/socialLogo/gp-icon.png" alt="GP">
+                </li>
+                <li><img src="../assets/socialLogo/insta-icon.png" alt="INSTA"></li>
+            </ul>
+        </section>
+
+    </footer>
+    <script src="../js/app.js"></script>
+    <script src="../js/catalog.js"></script>
+    <script src="../js/sliders.js"></script>
 </body>
-</html>
 
+</html>

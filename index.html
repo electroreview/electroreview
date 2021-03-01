@@ -2,110 +2,102 @@
 
 <html lang="en">
 
-    <head>
-       
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Electro Review</title>
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/style.css" />
-    </head>
+<head>
 
-    <body>
-        <header>
-          <nav id="product">
-            <img src="./assets/logo.png" width="150px" alt="logo">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro Review</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav id="product">
+            <img id="logo" src="./assets/logo.png" width="150px" alt="logo">
 
             <ul id="list">
-                <li><a href="./about.html">About Us</a></li>
-                <li><a href="./products.html">Products</a></li>
-                <li><a href="./cart.html">Cart</a><span id='itemCount'></span></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../product.html">Products</a></li>
+                <li><a href="../cart.html">Cart</a><span id='itemCount'></span></li>
             </ul>
         </nav>
-        </header>
-        <main>
-            <!-- ----------------------------main img sliders------------------ -->
-            <section class="index-img-slider">
-                <div class="img-arrow">
-                    <img class="mySlides fade"
-                        src="./assets/index-img/img-1.jpg" />
-                    <img class="mySlides fade"
-                        src="./assets/index-img/img-2.jpg" />
-                    <img class="mySlides fade"
-                        src="./assets/index-img/img-3.jpg" />
-                    <img class="mySlides fade"
-                        src="./assets/index-img/img-4.jpg" />
-                    <img class="mySlides fade"
-                        src="./assets/index-img/img-5.jpg" />
-                    <img class="mySlides fade"
-                        src="./assets/index-img/img-6.jpg" />
-                    <a class="prevIndex" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="nextIndex" onclick="plusSlides(1)">&#10095;</a>
-                    <div class="dotIndix" style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                        <span class="dot" onclick="currentSlide(5)"></span>
-                        <span class="dot" onclick="currentSlide(6)"></span>
-                    </div>
+    </header>
+    <main>
+        <!-- ----------------------------main img sliders-----please add photo------------- -->
+        <section class="index-img-slider">
+            <div class="img-arrow">
+                <img class="mySlides fade" src="./assets/index-img/img-1.jpg" />
+                <img class="mySlides fade" src="./assets/index-img/img-2.jpg" />
+                <img class="mySlides fade" src="./assets/index-img/img-3.jpg" />
+                <img class="mySlides fade" src="./assets/index-img/img-4.jpg" />
+                <img class="mySlides fade" src="./assets/index-img/img-5.jpg" />
+                <img class="mySlides fade" src="./assets/index-img/img-6.jpg" />
+                <a class="prevIndex" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nextIndex" onclick="plusSlides(1)">&#10095;</a>
+                <div class="dotIndix" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section>
-                <h2 id="cat">categories</h2>
-            </section>
-            <section id="imgcat">
-                <ul>
-                    <li><img src="./assets/laptop/LenovoLaptop/lenovo-1.jpg"
-                            alt="labtop"></li>
-                    <li><img src="./assets/phones/ApplePhone/iphone-1.jpg"
-                            alt="Phone"></li>
-                    <li><img
-                            src="./assets/tablet/AppleTablet/apple-tablet-1.jpg"
-                            alt="Tablet"></li>
+        <section id="cat">
+            <h2>categories</h2>
+        </section>
 
-                </ul>
-            </section>
-            <section id="top5">
-                <ul>
-                    <li><img src="./assets/laptop/DellLaptop/dell-1.jpg"
-                            alt="labtop"></li>
-                    <li><img src="./assets/phones/ApplePhone/iphone-1.jpg"
-                            alt="Phone"></li>
-                    <li><img
-                            src="./assets/tablet/SamsungTablet/galaxy-tablet-1.jpg"
-                            alt="tablet"></li>
-                    <li><img
-                            src="./assets/phones/GooglePixel/google-pixel-1.jpg"
-                            alt="Phone"></li>
-                    <li><img src="./assets/laptop/HpLaptop/hp-1.jpg"
-                            alt="laptop"></li>
+        <div class="row">
+            <div class="column">
+                <img src="./assets/laptop/LenovoLaptop/lenovo-1.jpg" alt="labtop"></div>
+            <div class="column">
+                <img src="./assets/phones/ApplePhone/iphone-1.jpg" alt="Phone"></div>
 
-                </ul>
-            </section>
+            <div class="column">
+                <img src="./assets/tablet/AppleTablet/apple-tablet-1.jpg" alt="Tablet">
+
+            </div>
+        </div>
+
+        <hr>
+        <!--please make the top 5 slider-->
+        <section id="top5">
+            <ul>
+                <li><img src="./assets/laptop/DellLaptop/dell-1.jpg" alt="labtop"></li>
+                <li><img src="./assets/phones/ApplePhone/iphone-3.jpg" alt="Phone"></li>
+                <li><img src="./assets/tablet/SamsungTablet/galaxy-tablet-1.jpg" alt="tablet"></li>
+                <li><img src="./assets/phones/GooglePixel/google-pixel-1.jpg" alt="Phone"></li>
+                <li><img src="./assets/laptop/HpLaptop/hp-1.jpg" alt="laptop"></li>
+
+            </ul>
+        </section>
 
 
-        </main>
+    </main>
 
-        <footer id="footer">
-            <p>&copy;2021 Electro Review</p>
-            <section id="social">
-                <ul>
-                    <li><img src="./assets/socialLogo/fb-icon.png" alt="FB"></li>
-                    <li><img src="./assets/socialLogo/twit-icon.png" alt="TWIT"></li>
-    
-                    <li>
-                        <img src="./assets/socialLogo/gp-icon.png" alt="GP">
-                    </li>
-                    <li><img src="./assets/socialLogo/insta-icon.png" alt="INSTA"></li>
-                </ul>
-            </section>
-    
-        </footer>
-                      <script src="../js/sliders.js"></script>
-                      
-          <script src="js/app.js"></script>
-          <script src="js/catalog.js"></script>
-        </body>
-      </html>
+    <footer id="footer">
+        <p>&copy;2021 Electro Review</p>
+        <section id="social">
+            <ul>
+                <li><img src="./assets/socialLogo/fb-icon.png" alt="FB"></li>
+                <li><img src="./assets/socialLogo/twit-icon.png" alt="TWIT"></li>
+
+                <li>
+                    <img src="./assets/socialLogo/gp-icon.png" alt="GP">
+                </li>
+                <li><img src="./assets/socialLogo/insta-icon.png" alt="INSTA"></li>
+            </ul>
+        </section>
+
+    </footer>
+    <script src="../js/sliders.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+
+</html>
