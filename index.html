@@ -3,8 +3,7 @@
 <html lang="en">
 
     <head>
-        <!-- <meta charset="UTF-8"> -->
-        <!-- <link rel="icon" href="http://example.com/favicon.png"> -->
+       
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Electro Review</title>
@@ -14,34 +13,32 @@
 
     <body>
         <header>
-            <nav id="index">
-                <img src="./images/logo.png" alt="logo">
- 
-          
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-          <li><a href="./product.html">Products</a></li>
-          <li><a href="cart.html">Cart</a><span id="itemCount"></span></li>
-                </ul>
-            </nav>
+          <nav id="product">
+            <img src="./assets/logo.png" width="150px" alt="logo">
+
+            <ul id="list">
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./cart.html">Cart</a><span id='itemCount'></span></li>
+            </ul>
+        </nav>
         </header>
         <main>
             <!-- ----------------------------main img sliders------------------ -->
             <section class="index-img-slider">
                 <div class="img-arrow">
                     <img class="mySlides fade"
-                        src="./images/index-img/img-1.jpg" />
+                        src="./assets/index-img/img-1.jpg" />
                     <img class="mySlides fade"
-                        src="./images/index-img/img-2.jpg" />
+                        src="./assets/index-img/img-2.jpg" />
                     <img class="mySlides fade"
-                        src="./images/index-img/img-3.jpg" />
+                        src="./assets/index-img/img-3.jpg" />
                     <img class="mySlides fade"
-                        src="./images/index-img/img-4.jpg" />
+                        src="./assets/index-img/img-4.jpg" />
                     <img class="mySlides fade"
-                        src="./images/index-img/img-5.jpg" />
+                        src="./assets/index-img/img-5.jpg" />
                     <img class="mySlides fade"
-                        src="./images/index-img/img-6.jpg" />
+                        src="./assets/index-img/img-6.jpg" />
                     <a class="prevIndex" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="nextIndex" onclick="plusSlides(1)">&#10095;</a>
                     <div class="dotIndix" style="text-align:center">
@@ -60,29 +57,29 @@
             </section>
             <section id="imgcat">
                 <ul>
-                    <li><img src="./images/laptop/LenovoLaptop/lenovo-1.jpg"
+                    <li><img src="./assets/laptop/LenovoLaptop/lenovo-1.jpg"
                             alt="labtop"></li>
-                    <li><img src="./images/phones/ApplePhone/iphone-1.jpg"
+                    <li><img src="./assets/phones/ApplePhone/iphone-1.jpg"
                             alt="Phone"></li>
                     <li><img
-                            src="./images/tablet/AppleTablet/apple-tablet-1.jpg"
+                            src="./assets/tablet/AppleTablet/apple-tablet-1.jpg"
                             alt="Tablet"></li>
 
                 </ul>
             </section>
             <section id="top5">
                 <ul>
-                    <li><img src="./images/laptop/DellLaptop/dell-1.jpg"
+                    <li><img src="./assets/laptop/DellLaptop/dell-1.jpg"
                             alt="labtop"></li>
-                    <li><img src="./images/phones/ApplePhone/iphone-1.jpg"
+                    <li><img src="./assets/phones/ApplePhone/iphone-1.jpg"
                             alt="Phone"></li>
                     <li><img
-                            src="./images/tablet/SamsungTablet/galaxy-tablet-1.jpg"
+                            src="./assets/tablet/SamsungTablet/galaxy-tablet-1.jpg"
                             alt="tablet"></li>
                     <li><img
-                            src="./images/phones/GooglePixel/google-pixel-1.jpg"
+                            src="./assets/phones/GooglePixel/google-pixel-1.jpg"
                             alt="Phone"></li>
-                    <li><img src="./images/laptop/HpLaptop/hp-1.jpg"
+                    <li><img src="./assets/laptop/HpLaptop/hp-1.jpg"
                             alt="laptop"></li>
 
                 </ul>
@@ -91,18 +88,21 @@
 
         </main>
 
-        <footer id ="footer">
+        <footer id="footer">
             <p>&copy;2021 Electro Review</p>
-            <section id ="social">
-              <ul >
-                  <li><img src="./assets/socialLogo/fb-icon.png" alt="Facebook"></li>
-                  <li><img src="./assets/socialLogo/twit-icon.png" alt="Twitter"></li>
-
-                  <li><img src="./assets/socialLogo/insta-icon.png" alt="Instagram"></li>
-
-              </ul>
-          </section>
-          </footer>
+            <section id="social">
+                <ul>
+                    <li><img src="./assets/socialLogo/fb-icon.png" alt="FB"></li>
+                    <li><img src="./assets/socialLogo/twit-icon.png" alt="TWIT"></li>
+    
+                    <li>
+                        <img src="./assets/socialLogo/gp-icon.png" alt="GP">
+                    </li>
+                    <li><img src="./assets/socialLogo/insta-icon.png" alt="INSTA"></li>
+                </ul>
+            </section>
+    
+        </footer>
                       <script src="../js/sliders.js"></script>
                       
           <script src="js/app.js"></script>
