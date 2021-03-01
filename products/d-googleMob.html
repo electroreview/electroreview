@@ -1,98 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google-phone</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google-phone</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://kit.fontawesome.com/c1a4e17460.js"
+            crossorigin="anonymous"></script>
+
+    </head>
 
 
-<body>
+    <body>
 
-    <header>
+        <header>
 
 
-    </header>
-    <main>
-<div class="imgsAndTable">  
-        <section class='productImg'>
-            <img class="mySlides fade" src="../images/phones/GooglePixel/google-pixel-1.jpg" />
-            <img class="mySlides fade" src="../images/phones/GooglePixel/google-pixel-2.jpg" />
-            <img class="mySlides fade" src="../images/phones/GooglePixel/google-pixel-3.jpg" />
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
+        </header>
+        <main>
+            <div class="pic-spics">
+                <div class="imgsAndTable">
+                    <section class='productImg'>
+                        <img class="mySlides fade"
+                            src="../images/phones/GooglePixel/google-pixel-1.jpg"
+                            />
+                        <img class="mySlides fade"
+                            src="../images/phones/GooglePixel/google-pixel-2.jpg"
+                            />
+                        <img class="mySlides fade"
+                            src="../images/phones/GooglePixel/google-pixel-3.jpg"
+                            />
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </section>
+                </div>
+                <section>
+                    <div class="model">
+                        <h4 class="spic-h4">Product Name: Google pixel 5 </h4>
+                        <h5>699 JOD</h5>
+                    </div>
+
+                    <div class="model">
+                        <h4>Decsription</h4>
+                        <p> Announced 2020, September 30</p>
+                    </div>
+                    <section>
+                        <button class="addToCart">
+                            <i class="fas fa-cart-plus"> </i> ADD TO CART
+                        </button>
+                    </section>
+                    <section>
+                        <table>
+                            <th>Specification</th>
+                            <th>Property</th>
+                            <tr>
+                                <td>Color</td>
+                                <td>Just Black, Sorta Sage</td>
+                            </tr>
+                            <tr>
+                                <td>Body: </td>
+                                <td>144.7 x 70.4 x 8 mm 151g</td>
+                            </tr>
+                            <tr>
+                                <td>Warranty</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>Processor</td>
+                                <td>Qualcomm SM7250 Snapdragon 765G (7 nm)</td>
+                            </tr>
+                            <tr>
+                                <td>Memory RAM</td>
+                                <td>8 GB</td>
+                            </tr>
+                            <tr>
+                                <td>Screen Size (Inch)</td>
+                                <td>6.0" Flexible OLED,
+                                    1080 x 2340 px resolution</td>
+                            </tr>
+                            <tr>
+                                <td>Storage</td>
+                                <td>128 GB</td>
+                            </tr>
+                            <tr>
+                                <td>GPU</td>
+                                <td>Adreno 620</td>
+                            </tr>
+                        </table>
+
+                    </section>
+                </section>
             </div>
 
+            <!-------------------------------------------------- Form--------------------------------- -->
+            <section>
+                <form>
+                    <lable for="userName">please enter your full Name
+                    </lable><input type="text" id="name" name="userName"><br><label
+                        for="inputReview">please write your
+                        review</label><input type="text" id="inputReview"><br>
+                    <input id="subReview" type="submit" value="Submit">
+                </form>
+            </section>
+            <section>
+                <button>Add to cart</button>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="../js/sliders.js"></script>
 
-
-        </section>
-        <section>
-            <table class="productTable">
-                <tr>
-                    <th>
-                        product Name
-                    </th>
-                    <td>
-                        google pxil 5
-                    </td>
-
-                </tr>
-                <tr>
-                    <th>description</th>
-                    <td>
-                        <p> Body: 144.7 x 70.4 x 8 mm 151g; Gorilla Glass 6 front Display: 6.0" Flexible OLED, 1080 x 2340 px resolution Memory: 8GB RAM, 128GB OS/Software: Android 11 Rear cameras: 12.2 MP dual-pixel autofocus Front camera: 8MP Video capture:
-                            Rear camera: 4K @ 60fps, 1080p @ 60fps or 120fps; Front: 1080p @ 30fps Battery: 4080mAh
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        price
-                    </th>
-                    <td>
-                        699$
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        Dummy review
-                    </th>
-                    <td>
-                        <p>Pictures have great dynamic range, shots are vibrant and clear and Night Sight does an excellent job at handling low-light. Digital zooming maxes out at 7x and while it works well enough, details do get muddied on faraway objects.The
-                            reflective accents of the power button and "G" logo on the back are also a lovely touch, also it has a 90Hz display, meaning the screen refreshes 90 frames a second. Most phones, including the Pixel 4A 5G, refresh 60 times
-                            a second, though there are some that have 120Hz displays, like the OnePlus 8T and Galaxy S20.
-                        </p>
-                    </td>
-                </tr>
-            </table>
-
-        </section>
-</div>
-        <section>
-            
-            <form>
-                <lable for="userName">please enter your full Name
-                </lable><input type="text" id="name" name="userName"><br><label for="inputReview">please write your
-          review</label><input type="text" id="inputReview"><br> <input id="subReview" type="submit" value="Submit">
-            </form>
-
-        </section>
-        <section>
-            <button>Add to cart</button>
-        </section>
-    </main>
-    <footer></footer>
-    <script src="../js/sliders.js"></script>
-
-</body>
+    </body>
 
 
 </html>
