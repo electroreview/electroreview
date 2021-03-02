@@ -1,113 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Product</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Product</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
 
-<body>
-    <header>
-        <nav id="product">
-            <img id="logo" src="./assets/logo.png" width="150px" alt="logo">
+    <body>
+        <header>
+            <header>
+                <nav>
+                    <img id="logo" src="./assets/logo.png" width="150px"
+                        alt="logo">
+                    <a href="../index.html">Home</a>
+                    <a href="../about.html">About Us</a>
+                    <a href="../product.html">Products</a>
+                    <a href="../cart.html">Cart</a><span id='itemCount'> </span>
+                </nav>
+            </header>
+        </header>
 
-            <ul id="list">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About Us</a></li>
-                <li><a href="./products.html">Products</a></li>
-                <li><a href="./cart.html">Cart</a><span id='itemCount'></span></li>
-            </ul>
-        </nav>
-    </header>
+        <main id="productheader">
 
-    <main id="productheader">
-                
-        <h2>Laptops</h2>
-        <div class="row">
-            <div class="column">
-                <a href="./products/b-dell.html">
-                <img src="./assets/laptop/DellLaptop/dell-1.jpg " width="300px" height="300px" /> </a>
+            <h2>Laptops</h2>
+            <div class="row">
+                <div class="column">
+                    <a href="./products/b-dell.html">
+                        <img src="./assets/laptop/DellLaptop/dell-1.jpg"
+                            width="300px"
+                            height="300px" /> </a>
+                </div>
+
+                <div class="column">
+                    <a href="./products/a-hp.html">
+                        <img src="./assets/laptop/HpLaptop/hp-1.jpg"
+                            width="300px" height="300px" /></a>
+                </div>
+
+                <div class="column">
+                    <a href="./products/c-lenovo.html">
+                        <img src="./assets/laptop/LenovoLaptop/lenovo-1.jpg"
+                            width="300px" height="300px" /> </a>
+                </div>
             </div>
 
-            <div class="column">
-                <a href="./products/a-hp.html">
-                    <img src="./assets/laptop/HpLaptop/hp-1.jpg" width="300px" height="300px" /></a>
+            <hr>
+
+            <h2>Phones</h2>
+            <div class="row">
+                <div class="column">
+                    <a href="./products/f-iphone.html">
+                        <img src="./assets/phones/ApplePhone/iphone-1.jpg"
+                            width="300px" height="300px" /></a>
+                </div>
+
+                <div class="column">
+                    <a href="./products/d-googleMob.html">
+                        <img
+                            src="./assets/phones/GooglePixel/google-pixel-1.jpg"
+                            width="300px" height="300px" /></a>
+                </div>
+
+                <div class="column">
+                    <a href="./products/e-huaweiMobile.html">
+                        <img src="./assets/phones/HuaweiPhone/huawei-1.jpg"
+                            width="300px" height="300px" /> </a>
+                </div>
             </div>
 
-            <div class="column">
-                <a href="./products/c-lenovo.html">
-                    <img src="./assets/laptop/LenovoLaptop/lenovo-1.jpg" width="300px" height="300px" /> </a>
+            <hr>
+
+            <h2>Tablets</h2>
+            <div class="row">
+                <div class="column">
+                    <a href="./products/h-ipadTablet.html">
+                        <img
+                            src="./assets/tablet/AppleTablet/apple-tablet-1.jpg"
+                            width="300px" height="300px" /></a>
+                </div>
+
+                <div class="column">
+                    <a href="./products/g-huaweiTablet.html">
+                        <img
+                            src="./assets/tablet/HuaweiTablet/huawei-tablet-1.jpg"
+                            width="300px" height="300px" /></a>
+                </div>
+
+                <div class="column">
+                    <a href="./products/i-samsungTablet.html">
+                        <img
+                            src="./assets/tablet/SamsungTablet/galaxy-tablet-3.jpg"
+                            width="300px" height="300px" /></a>
+                </div>
             </div>
-        </div>
+
+            <div>
+                <h2> Take a look at all the products and the specifications</h2>
+                <h2>Electro Review is your destination for the best electronic
+                    devices, browse our categories and find the best prices
+                </h2>
+                <h2>Help others by reviewing a product you already used, let's
+                    pass on our experiences</h2>
+
+                <section id='container' class="tbl"></section>
+            </div>
+
+        </main>
 
         <hr>
+        <footer>
+            <p>&copy;2021 Electro Review</p>
+            <section id="social">
+                <img src="./assets/socialLogo/fb-icon.png" alt="FB">
+                <img src="./assets/socialLogo/twit-icon.png" alt="TWIT">
+                <img src="./assets/socialLogo/gp-icon.png" alt="GP">
+                <img src="./assets/socialLogo/insta-icon.png"
+                    alt="INSTA">
+            </section>
 
-        <h2>Phones</h2>
-        <div class="row">
-            <div class="column">
-                <a href="./products/f-iphone.html">
-                    <img src="./assets/phones/ApplePhone/iphone-1.jpg" width="300px" height="300px" /></a>
-            </div>
-
-            <div class="column">
-                <a href="./products/d-googleMob.html">
-                    <img src="./assets/phones/GooglePixel/google-pixel-1.jpg" width="300px" height="300px" /></a>
-            </div>
-
-            <div class="column">
-                <a href="./products/e-huaweiMobile.html">
-                    <img src="./assets/phones/HuaweiPhone/huawei-1.jpg" width="300px" height="300px" /> </a>
-            </div>
-        </div>
-
-        <hr>
-
-        <h2>Tablets</h2>
-        <div class="row">
-            <div class="column">
-                <a href="./products/h-ipadTablet.html">
-                    <img src="./assets/tablet/AppleTablet/apple-tablet-1.jpg" width="300px" height="300px" /></a>
-            </div>
-            
-            <div class="column">
-                <a href="./products/g-huaweiTablet.html">
-                    <img src="./assets/tablet/HuaweiTablet/huawei-tablet-1.jpg" width="300px" height="300px" /></a>
-            </div>
-            
-            <div class="column">
-                <a href="./products/i-samsungTablet.html">
-                    <img src="./assets/tablet/SamsungTablet/galaxy-tablet-3.jpg" width="300px" height="300px" /></a>
-            </div>
-        </div>
-
-        <div>
-            <h2> Take a look at all the products and the specifications</h2>
-            <h2>Electro Review is your destination for the best electronic devices, browse our categories and find the best prices </h2>
-            <h2>Help others by reviewing a product you already used, let's pass on our experiences</h2>
-        
-            <section id ='container' class="tbl"></section>
-        </div>
-    
-    </main>
-    
-    <footer id="footer">
-        <p>&copy;2021 Electro Review</p>
-        <section id="social">
-            <ul>
-                <li><img src="./assets/socialLogo/fb-icon.png" alt="FB"></li>
-                <li><img src="./assets/socialLogo/twit-icon.png" alt="TWIT"></li>
-
-                <li>
-                    <img src="./assets/socialLogo/gp-icon.png" alt="GP">
-                </li>
-                <li><img src="./assets/socialLogo/insta-icon.png" alt="INSTA"></li>
-            </ul>
-        </section>
-
-    </footer>
-    <script src='./js/product.js'> </script>
-</body>
+        </footer>
+        <script src='./js/product.js'> </script>
+    </body>
 
 </html>

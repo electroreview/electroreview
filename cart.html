@@ -1,75 +1,70 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+    <head>
 
-    <title>Electro Review</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-</head>
+        <title>Electro Review</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-<body>
-    <header>
-        <nav id="product">
-            <img id="logo" src="./assets/logo.png" width="150px" alt="logo">
-
-            <ul id="list">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About Us</a></li>
-                <li><a href="../product.html">Products</a></li>
-                <li><a href="../cart.html">Cart</a><span id='itemCount'></span></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="deck col-1">
-            <div class="card">
-                <header>
-                    <h1>Your Cart</h1>
-                </header>
-                <div class="copy">
-                    <ol>
-                        <li>Click the "X" next to any item to remove it from your cart</li>
-                    </ol>
+    <body>
+        <header>
+            <nav>
+                <img id="logo" src="./assets/logo.png" width="150px" alt="logo">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About Us</a>
+                <a href="../product.html">Products</a>
+                <a href="../cart.html">Cart</a><span id='itemCount'> </span>
+            </nav>
+        </header>
+        <main>
+            <section class="deck col-1">
+                <div class="card">
+                    <header>
+                        <h1>Your Cart</h1>
+                    </header>
+                    <div class="copy">
+                        <ol>
+                            <li>Click the "X" next to any item to remove it from
+                                your cart</li>
+                        </ol>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="deck col-1">
-            <div id="cart-container" class="card">
-                <table id="cart">
-                    <thead>
-                        <tr>
-                            <th>Remove</th>
-                            <th>Quantity</th>
-                            <th>Item</th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                    <tfoot></tfoot>
-                </table>
-            </div>
-        </section>
-    </main>
+            <section class="deck col-1">
+                <div id="cart-container" class="card">
+                    <table id="cart">
+                        <thead>
+                            <tr>
+                                <th>Remove</th>
+                                <th>Quantity</th>
+                                <th>Item</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+            </section>
+        </main>
 
-    <footer id="footer">
-        <p>&copy;2021 Electro Review</p>
-        <section id="social">
-            <ul>
-                <li><img src="./assets/socialLogo/fb-icon.png" alt="FB"></li>
-                <li><img src="./assets/socialLogo/twit-icon.png" alt="TWIT"></li>
+        <hr>
+        <footer>
+            <p>&copy;2021 Electro Review</p>
+            <section id="social">
+                <img src="./assets/socialLogo/fb-icon.png" alt="FB">
+                <img src="./assets/socialLogo/twit-icon.png" alt="TWIT">
+                <img src="./assets/socialLogo/gp-icon.png" alt="GP">
+                <img src="./assets/socialLogo/insta-icon.png"
+                    alt="INSTA">
+            </section>
 
-                <li>
-                    <img src="./assets/socialLogo/gp-icon.png" alt="GP">
-                </li>
-                <li><img src="./assets/socialLogo/insta-icon.png" alt="INSTA"></li>
-            </ul>
-        </section>
+        </footer>
 
-    </footer>
-
-    <script src="js/app.js"></script>
-    <script src="js/cart.js"></script>
-</body>
+        <script src="js/app.js"></script>
+        <script src="js/cart.js"></script>
+    </body>
 
 </html>
