@@ -458,6 +458,8 @@ label span {
   */
 
 
+/* sara and nada  */
+
 /* product css */
 
 * {
@@ -485,20 +487,36 @@ main h2 {
     padding-bottom: 15px;
 }
 
-
+/* saran and nada work */
 /* header */
 
 header {
-    width: auto;
+   height:200px;
 }
 
 #product {
     float: left;
 }
 
-#list {
+  #list {
     float: right;
-    padding-left: 20cm;
+    position: relative;
+     padding-left: 22cm;
+   padding-right: 2cm; 
+   } 
+#Pabout { 
+       color: lightslategray; 
+        text-align: left; 
+       font-family: 'Yellowtail',cursive; 
+        font-size: bold;
+    padding-bottom: .5cm;}
+ 
+#mainH1{
+    font-family: cursive;
+    font-size: large;
+    color: blue;
+    text-align: center;
+
 }
 
 
@@ -521,22 +539,52 @@ footer ul li {
 
 footer {
     background-color: #00509D;
+  
+    clear: both;
+    padding: 20px;
+    
+    text-align: center;
+      
 }
 
-#logo {
-    height: 100px;
-}
 
 #aboutH1 {
     font-family: cursive;
     font-size: large;
-    text-align: center;
+    text-align: left;
     color: blue;
 }
 
-#Pabout {
-    text-align: center;
-    color: rgb(5, 5, 87);
-    font-size: small;
-    font-family: cursive;
+
+#teamheader{
+font-size: large;
+font-family: cursive;
+color: blue;
+text-align:justify;
+
 }
+
+.col1 {
+ 
+    width: 300px;
+    float: left;
+    
+    background-color: rgb(255, 206, 235);
+
+  }
+  .col2{
+  
+    width: 300px;
+    float: right;
+
+    background-color: rgb(255, 206, 235);
+
+  }
+  #body{
+text-align: left;
+
+  }
+  #logo{
+      position: relative;
+      top:30px;
+  }
