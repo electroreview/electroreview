@@ -21,7 +21,6 @@ function handleSubmit(event) {
     addSelectedItemToCart();
     cart.saveToLocalStorage();
     updateCounter();
-    // updateCartPreview();
     confirmMsg();
 }
 
@@ -43,29 +42,8 @@ function updateCounter() {
     updateEl.textContent = cart.items.length;
 }
 
-// function updateCartPreview() {
-//   let divEl = document.getElementById('cartContents');
-//   let articleEl = document.createElement('article');
-//   divEl.appendChild(articleEl);
-//   articleEl.textContent = `The Product: ${cart.items[[cart.items.length - 1]].product}, The Quantity: ${cart.items[[cart.items.length - 1]].quantity}`;
-// }
-
-
-
-
-
-// function updateReview() {
-//     let userName = document.getElementById('name').value;
-//     let article1El = document.getElementById('userName');
-//     article1El.innerHTML = userName;
-//     let divEl = document.getElementById('textReview').value;
-//     let articleEl = document.getElementById('divEl');
-//     articleEl.innerHTML = divEl;
-// }
-
-
-// updateReview();
-
+const catalogForm= document.getElementById('catalog');
+catalogForm.addEventListener('submit', handleSubmit);
 
 function updateReview() {
     let c1 = document.getElementById('textReview').value;
