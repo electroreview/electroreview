@@ -4,7 +4,7 @@ body {
 }
 
 .productImg img {
-  width: 400px;
+  width: 437px;
   height: 400px;
 }
 
@@ -82,7 +82,7 @@ form #subReview {
   margin-top: -22px;
   color: rgb(105, 170, 255);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 40px;
   transition: 0.6s eacse;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -90,7 +90,8 @@ form #subReview {
 
 .productImg {
   position: relative;
-  width: 400px;
+  width: 450px;
+  height: fit-content;
 }
 
 .imgsAndTable {
@@ -139,13 +140,13 @@ table td {
   border-radius: 4px;
   box-shadow: 0 5px 0 #006599;
   color: #fff;
-  width:auto;
+  width: auto;
   cursor: pointer;
   font: inherit;
   margin: 0;
   outline: 0;
   padding: 12px 20px;
-  transition: all .1s linear;
+  transition: all 0.1s linear;
 }
 
 button:active {
@@ -225,7 +226,6 @@ main ul li {
   display: inline-block;
   padding: 70px;
 }
-
 
 #itemCount {
   color: #ccc;
@@ -372,58 +372,26 @@ header {
   padding-right: 2cm;
 } */
 #Pabout {
-  color: lightslategray;
+  color: #8f8f8f;
   text-align: left;
   font-family: "Yellowtail", cursive;
-  font-size: bold;
   padding-bottom: 0.5cm;
+  margin-left: 1%;
+  line-height: normal;
+  font-size: larger;
 }
-
-#mainH1 {
-  font-family: cursive;
-  font-size: large;
-  color: blue;
-  text-align: center;
-}
-
-/* footer */
-
-/* footer p {
-  float: left;
-  padding: 20px;
-} */
-
-/* footer ul {
-  float: right;
-  padding-left: 20cm;
-  padding: 20px;
-} */
-
-/* footer ul li {
-  display: inline-block;
-} */
-
-/* footer {
-  background-color: #00509d;
-
-  clear: both;
-  padding: 20px;
-
-  text-align: center;
-} */
 
 #aboutH1 {
-  font-family: cursive;
   font-size: large;
-  text-align: left;
-  color: blue;
-}
-
-#teamheader {
-  font-size: large;
+  padding: 17px;
+  border-radius: 200px;
+  box-shadow: 0 4px 8px 0 #4c96d7, 0 6px 20px 0 rgb(0 0 0 / 19%);
+  color: #4c96d7;
+  width: 14%;
   font-family: cursive;
-  color: blue;
-  text-align: justify;
+  text-align: center;
+  margin: 0 0 17px 0;
+  background-color: white;
 }
 
 .col1 {
@@ -450,7 +418,6 @@ header {
   display: flex;
   flex-direction: row;
   margin-bottom: 2%;
-  border: black solid 1px;
   margin: auto;
   border-radius: 10px;
 }
@@ -473,22 +440,26 @@ header {
 .Categories-names {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   font-family: cursive;
   font-size: large;
+  width: 84%;
+  margin-left: 8%;
 }
 
 .Categories-prices {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   font-family: cursive;
   font-size: large;
+  width: 87%;
+  margin-left: 6%;
 }
 
 footer {
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   color: gray;
   text-align: center;
 }
@@ -525,4 +496,27 @@ header nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.aboutUsSection {
+  margin: 2%;
+  border: 2px solid #cdc7c7;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 #4c96d7, 0 6px 20px 0 rgb(0 0 0 / 19%);
+  background-color: floralwhite;
+}
+
+#mainH1 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 20px 95px;
+  border-radius: 200px;
+  box-shadow: 0 4px 8px 0 #4c96d7, 0 6px 20px 0 rgb(0 0 0 / 19%);
+  color: #4c96d7;
+  width: 37%;
+  font-family: cursive;
+  font-size: large;
+  text-align: center;
 }
