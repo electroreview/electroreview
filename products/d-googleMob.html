@@ -19,8 +19,7 @@
     <header>
         <header>
             <nav>
-                <img id="logo" src="../assets/logo.png" width="150px"
-                    alt="logo">
+                <img id="logo" src="../assets/logo.png" width="150px" alt="logo">
                 <a href="../index.html">Home</a>
                 <a href="../about.html">About Us</a>
                 <a href="../product.html">Products</a>
@@ -107,16 +106,16 @@
                             <fieldset>
                                 <legend>SHOP NOW!</legend>
                                 <label>
-                                        <span>Item</span>
+                                    <span>Item</span>
 
-                                        <select id="items" disabled>
-                                            <option value="Google phone" selected>Google phone</option>
-                                        </select>
-                                    </label>
+                                    <select id="items" disabled>
+                                        <option value="Google phone" selected>Google phone</option>
+                                    </select>
+                                </label>
                                 <label>
-                                        <span>Quantity</span>
-                                        <input id="quantity" type="number" />
-                                    </label>
+                                    <span>Quantity</span>
+                                    <input id="quantity" type="number" />
+                                </label>
                                 <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO CART</button>
                             </fieldset>
                         </form>
@@ -125,6 +124,23 @@
                 <div class="card" id="cartContents"></div>
             </section>
         </section>
+
+        <section>
+            <form id="userReviews">
+                <label for="userName">User Name </label>
+                <input type="text" id="name" name="userName"><br>
+                <textarea id="textReview" rows="5" placeholder="please write
+                    your review here!"></textarea>
+                <input type="button" value="submit" onclick="updateReview()"
+                    />
+                <br />
+                <!-- <p id="as"></p>
+                <p id="na"></p> -->
+            </form>
+        </section>
+        <div id="commentDiv">
+
+        </div>
 
 
     </main>

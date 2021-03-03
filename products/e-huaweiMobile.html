@@ -109,15 +109,21 @@
         </div>
 
         <section>
-            <form>
+            <form id="userReviews">
                 <label for="userName">User Name </label>
                 <input type="text" id="name" name="userName"><br>
-
-                <label for="inputReview">please write your review</label>
-                <input type="text" id="inputReview"><br> <input id="subReview" type="submit" value="Submit">
-                <button class="review"> <i class="fas fa-cart-plus"> </i> Submit your review</button>
+                <textarea id="textReview" rows="5" placeholder="please write
+                    your review here!"></textarea>
+                <input type="button" value="submit" onclick="updateReview()"
+                    />
+                <br />
+                <!-- <p id="as"></p>
+                <p id="na"></p> -->
             </form>
         </section>
+        <div id="commentDiv">
+
+        </div>
     </main>
 
     <hr>
