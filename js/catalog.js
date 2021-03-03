@@ -42,7 +42,7 @@ function updateCounter() {
     updateEl.textContent = cart.items.length;
 }
 
-const catalogForm= document.getElementById('catalog');
+const catalogForm = document.getElementById('catalog');
 catalogForm.addEventListener('submit', handleSubmit);
 
 function updateReview() {

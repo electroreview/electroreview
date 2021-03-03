@@ -1,22 +1,22 @@
 'use strict';
 
 // Constructor function for all products
-function ProductShow(name,price,memory,color,warranty,description,processor,size) {
-    this.name=name;
-    this.price=price;
-    this.memory=memory;
-    this.color=color;
-    this.warranty=warranty;
-    this.description=description;
-    this.processor=processor;
-    this.size=size;
+function ProductShow(name, price, memory, color, warranty, description, processor, size) {
+    this.name = name;
+    this.price = price;
+    this.memory = memory;
+    this.color = color;
+    this.warranty = warranty;
+    this.description = description;
+    this.processor = processor;
+    this.size = size;
 }
 
 // private function to constructor function
-ProductShow.prototype.render=function () {
+ProductShow.prototype.render = function () {
     const container = document.getElementById('container');
     const articleEl = document.createElement('article');
-    container.appendChild(articleEl);
+    // container.appendChild(articleEl);
 
     const h2El = document.createElement('h2');
     articleEl.appendChild(h2El);
@@ -116,7 +116,7 @@ const DelLatitude = new ProductShow(
 );
 
 const Lenovo = new ProductShow(
-    'Lenovo YOGA' ,
+    'Lenovo YOGA',
     '870 JOD',
     '16 GB RAM',
     'orchid',
@@ -149,7 +149,7 @@ const Huawei = new ProductShow(
 );
 
 const AppleIphone = new ProductShow(
-    'Apple iPhone Max' ,
+    'Apple iPhone Max',
     '500 JOD',
     '16 GB RAM',
     'Silver',
@@ -170,7 +170,7 @@ const HuaweiMediaPad = new ProductShow(
     '10.1 Full HD 1920 x 1200p'
 );
 
-const iPadOS  = new ProductShow(
+const iPadOS = new ProductShow(
     'iPadOS 14',
     '1240 JOD',
     '128 GB RAM',
@@ -181,7 +181,7 @@ const iPadOS  = new ProductShow(
     '12.9" FHD IPS 250 nits Display'
 );
 
-const GalaxyTab   = new ProductShow(
+const GalaxyTab = new ProductShow(
     'Galaxy Tab',
     '99 JOD',
     '32 GB RAM',
