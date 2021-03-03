@@ -45,13 +45,48 @@ function updateCounter() {
 const catalogForm = document.getElementById('catalog');
 catalogForm.addEventListener('submit', handleSubmit);
 
+
+let reviewArr={};
+
+// onClick
 function updateReview() {
+
     let c1 = document.getElementById('textReview').value;
-    let d1 = document.getElementById('as');
     let e1 = document.getElementById('name').value;
-    let f1 = document.getElementById('na');
-    d1.innerHTML = c1;
-    f1.innerHTML = e1;
+
+    reviewArr = JSON.parse(localStorage.getItem('comments')) || {};
+    reviewArr[e1] = c1;
+    saveLocal();
+    renderComments();
+
 }
-updateReview();
 populateForm();
+
+function saveLocal(){
+    localStorage.setItem('comments',JSON.stringify(reviewArr));
+}
+
+let commentDiv = document.getElementById('commentDiv');
+let ulEl = document.createElement('ul');
+commentDiv.appendChild(ulEl);
+function renderComments () {
+    let reviewArrData = JSON.parse(localStorage.getItem('comments'));
+    console.log(reviewArrData);
+
+    while (ulEl.firstChild) {
+        ulEl.removeChild(ulEl.firstChild);
+    }
+
+
+    let i;
+    for( i in reviewArrData) {
+        let liEl = document.createElement('li');
+        liEl.className = 'liClass';
+        ulEl.appendChild(liEl);
+        console.log(reviewArrData);
+        liEl.textContent = `${i}:${reviewArrData[i]}`;
+    }
+}
+renderComments();
+
+

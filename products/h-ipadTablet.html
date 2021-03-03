@@ -53,15 +53,27 @@
 
                 <!-------------------------- Table of Specification ------------------------->
                 <section>
-                    <div class="model">
-                        <h4 class="spic-h4">Product Name: iPadOS 14</h4>
-                        <h6>Model No:A1709 (Wi-Fi/Cellular)</h6>
-                        <h5> 1240 JOD</h5>
-                    </div>
-                    <div class="model">
-                        <h4>Decsription</h4>
-                        <p> iOS 14 with some additional change</p>
-                    </div>
+
+                    <form id="userReviews">
+                        <label for="userName">User Name </label>
+                        <input type="text" id="name" name="userName"><br>
+                        <textarea id="textReview" rows="5" placeholder="please write
+                            your review here!"></textarea>
+                        <input type="button" value="submit" onclick="updateReview()"
+                            />
+                        <br />
+                        <!-- <p id="as"></p>
+                        <p id="na"></p> -->
+                    </form>
+                </section>
+                <div id="commentDiv">
+    
+                </div>
+
+
+
+           
+
 
                     <table>
                         <th>Specification</th>

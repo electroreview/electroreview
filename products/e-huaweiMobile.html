@@ -121,38 +121,47 @@
                     </form>
                 </div>
             </div>
-            <div class="card" id="cartContents"></div>
-            <!-- ------------------User Review Section------------- -->
-            <section class="reviewSection">
-                <form>
-                    <label for="userName">User Name </label>
-                    <input type="text" id="name" name="userName"><br>
-                    <label for="textReview">Your review *</label>
-                    <textarea id="textReview" rows="5" placeholder="please write
-                        your review here!"></textarea>
-                    <input id="submitButton" type="button" value="Submit"
-                        onclick="updateReview()"
-                        />
-                    <br />
-                    <p id="as"></p>
-                    <p id="na"></p>
-                </form>
-            </section>
-        </main>
+                     <div class="card" id="cartContents"></div>
 
-        <hr>
-        <footer>
-            <p>&copy;2021 Electro Review</p>
-            <section id="social">
-                <img src="../assets/socialLogo/fb-icon.png" alt="FB">
-                <img src="../assets/socialLogo/twit-icon.png" alt="TWIT">
-                <img src="../assets/socialLogo/gp-icon.png" alt="GP">
-                <img src="../assets/socialLogo/insta-icon.png" alt="INSTA">
-            </section>
-        </footer>
-        <script src="../js/app.js"></script>
-        <script src="../js/catalog.js"></script>
-        <script src="../js/sliders.js"></script>
-    </body>
 
+                <section class="reviewSection">
+                    <form id="userReviews">
+                        <label for="userName">User Name </label>
+                        <input type="text" id="name" name="userName"><br>
+                        <label for="textReview">Your review *</label>
+
+                        <textarea id="textReview" rows="5" placeholder="please
+                            write
+                            your review here!"></textarea>
+                        <input id="submitButton" type="button" value="Submit"
+                            onclick="updateReview()"
+                            />
+                        <br />
+<!--                         <p id="as"></p> -->
+<!--                         <p id="na"></p> -->
+                    </form>
+                </section>
+           <div id="commentDiv">
+
+            </div>
+
+
+
+            </main>
+            <hr>
+            <footer>
+                <p>&copy;2021 Electro Review</p>
+                <section id="social">
+                    <img src="../assets/socialLogo/fb-icon.png" alt="FB">
+                    <img src="../assets/socialLogo/twit-icon.png" alt="TWIT">
+                    <img src="../assets/socialLogo/gp-icon.png" alt="GP">
+                    <img src="../assets/socialLogo/insta-icon.png" alt="INSTA">
+                </section>
+            </footer>
+            <script src="../js/app.js"></script>
+            <script src="../js/catalog.js"></script>
+            <script src="../js/sliders.js"></script>
+        </body>
+
+    </html>
 </html>

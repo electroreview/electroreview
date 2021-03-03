@@ -14,6 +14,7 @@
     <body>
 
         <header>
+
             <header>
                 <nav>
                     <img id="logo" src="../assets/logo.png" width="150px"
@@ -24,6 +25,7 @@
                     <a href="../cart.html">Cart</a><span id='itemCount'> </span>
                 </nav>
             </header>
+
         </header>
         <main>
             <div class="pic-spics">
@@ -122,24 +124,27 @@
 
 
 
-            <!-------------------------------------------------- Form--------------------------------- -->
-            <section class="reviewSection">
-                <form>
-                    <label for="userName">User Name </label>
-                    <input type="text" id="name" name="userName"><br>
-                    <label for="textReview">Your review *</label>
 
-                    <textarea id="textReview" rows="5" placeholder="please write
-                        your review here!"></textarea>
-                    <input id="submitButton" type="button" value="Submit"
-                        onclick="updateReview()"
-                        />
-                    <br />
-                    <p id="as"></p>
-                    <p id="na"></p>
-                </form>
-            </section>
+<section class="reviewSection">
+                    <form id="userReviews">
+                        <label for="userName">User Name </label>
+                        <input type="text" id="name" name="userName"><br>
+                        <label for="textReview">Your review *</label>
 
+                        <textarea id="textReview" rows="5" placeholder="please
+                            write
+                            your review here!"></textarea>
+                        <input id="submitButton" type="button" value="Submit"
+                            onclick="updateReview()"
+                            />
+                        <br />
+<!--                         <p id="as"></p> -->
+<!--                         <p id="na"></p> -->
+                    </form>
+                </section>
+           <div id="commentDiv">
+
+            </div>
         </main>
         <hr>
         <footer>
@@ -150,10 +155,12 @@
                 <img src="../assets/socialLogo/gp-icon.png" alt="GP">
                 <img src="../assets/socialLogo/insta-icon.png" alt="INSTA">
             </section>
+
         </footer>
         <script src="../js/app.js"></script>
         <script src="../js/catalog.js"></script>
         <script src="../js/sliders.js"></script>
     </body>
+
 
 </html>
