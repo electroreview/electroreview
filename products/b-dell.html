@@ -1,156 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>dell-laptop</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="https://kit.fontawesome.com/c1a4e17460.js" crossorigin="anonymous"></script>
+    <head>
+        <title>dell-laptop</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://kit.fontawesome.com/c1a4e17460.js"
+            crossorigin="anonymous"></script>
 
-</head>
+    </head>
 
 
-<body>
+    <body>
 
-    <header>
         <header>
-            <nav>
-                <img id="logo" src="../assets/logo.png" width="150px" alt="logo">
-                <a href="../index.html">Home</a>
-                <a href="../about.html">About Us</a>
-                <a href="../product.html">Products</a>
-                <a href="../cart.html">Cart</a><span id='itemCount'> </span>
-            </nav>
-        </header>
-    </header>
-    <main>
-        <div class="pic-spics">
-            <div class="imgsAndTable">
-                <section class='productImg'>
 
-                    <img class="mySlides fade" src="../assets/laptop/DellLaptop/dell-1.jpg" />
-                    <img class="mySlides fade" src="../assets/laptop/DellLaptop/dell-2.jpg" />
-                    <img class="mySlides fade" src="../assets/laptop/DellLaptop/dell-3.jpg" />
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
+            <header>
+                <nav>
+                    <img id="logo" src="../assets/logo.png" width="150px"
+                        alt="logo">
+                    <a href="../index.html">Home</a>
+                    <a href="../about.html">About Us</a>
+                    <a href="../product.html">Products</a>
+                    <a href="../cart.html">Cart</a><span id='itemCount'> </span>
+                </nav>
+            </header>
+
+        </header>
+        <main>
+            <div class="pic-spics">
+                <div class="imgsAndTable">
+                    <section class='productImg'>
+
+                        <img class="mySlides fade"
+                            src="../assets/laptop/DellLaptop/dell-1.jpg" />
+                        <img class="mySlides fade"
+                            src="../assets/laptop/DellLaptop/dell-2.jpg" />
+                        <img class="mySlides fade"
+                            src="../assets/laptop/DellLaptop/dell-3.jpg" />
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+
+                    </section>
+                </div>
+                <!-------------------------- Table of Specification ------------------------->
+                <section>
+                    <div class="model">
+                        <h4 class="spic-h4">Product Name: Dell Latitude </h4>
+                        <h6>Model No: 5300 Business </h6>
+                        <h5>549 JOD</h5>
                     </div>
+
+                    <div class="model">
+                        <h4>Description</h4>
+                        <p>Core i5 Laptop 2-in-1 Touch, Windows 10 Home</p>
+                    </div>
+
+                    <table>
+                        <th>Specification</th>
+                        <th>Property</th>
+                        <tr>
+                            <td>Color</td>
+                            <td>Black</td>
+                        </tr>
+                        <tr>
+                            <td>Additional Info</td>
+                            <td>Windows 10 Home</td>
+                        </tr>
+                        <tr>
+                            <td>Warranty</td>
+                            <td>1 Year</td>
+                        </tr>
+                        <tr>
+                            <td>Processor</td>
+                            <td>Core i5 Laptop</td>
+                        </tr>
+                        <tr>
+                            <td>Memory RAM</td>
+                            <td>8 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Screen Size (Inch)</td>
+                            <td>13.3" IPS Full HD Touch Screen Anti-Reflective</td>
+                        </tr>
+                        <tr>
+                            <td>Storage</td>
+                            <td>256 GB PCIe® NVMe™ M.2 SSD</td>
+                        </tr>
+                        <tr>
+                            <td>Graphic Card</td>
+                            <td>Intel® UHD Graphic Card</td>
+                        </tr>
+                    </table>
 
                 </section>
             </div>
-            <!-------------------------- Table of Specification ------------------------->
+            <div class="copy">
+                <form id="catalog">
+                    <fieldset>
+                        <legend>SHOP NOW!</legend>
+                        <label>
+                            <span>Item</span>
 
-            <section>
-                <div class="model">
-                    <h4 class="spic-h4">Product Name: Dell Latitude </h4>
-                    <h6>Model No: 5300 Business </h6>
-                    <h5>549 JOD</h5>
-                </div>
+                            <select id="items" disabled>
+                                <option value="dell laptop" selected>Dell
+                                    Laptop</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>Quantity</span>
+                            <input id="quantity" type="number" required />
+                        </label>
+                        <button class="addToCart"> <i class="fas
+                                fa-cart-plus"> </i> ADD TO CART </button>
+                    </fieldset>
+                </form>
+            </div>
 
-                <div class="model">
-                    <h4>Description</h4>
-                    <p>Core i5 Laptop 2-in-1 Touch, Windows 10 Home</p>
-                </div>
 
-                <table>
-                    <th>Specification</th>
-                    <th>Property</th>
-                    <tr>
-                        <td>Color</td>
-                        <td>Black</td>
-                    </tr>
-                    <tr>
-                        <td>Additional Info</td>
-                        <td>Windows 10 Home</td>
-                    </tr>
-                    <tr>
-                        <td>Warranty</td>
-                        <td>1 Year</td>
-                    </tr>
-                    <tr>
-                        <td>Processor</td>
-                        <td>Core i5 Laptop</td>
-                    </tr>
-                    <tr>
-                        <td>Memory RAM</td>
-                        <td>8 GB</td>
-                    </tr>
-                    <tr>
-                        <td>Screen Size (Inch)</td>
-                        <td>13.3" IPS Full HD Touch Screen Anti-Reflective</td>
-                    </tr>
-                    <tr>
-                        <td>Storage</td>
-                        <td>256 GB PCIe® NVMe™ M.2 SSD</td>
-                    </tr>
-                    <tr>
-                        <td>Graphic Card</td>
-                        <td>Intel® UHD Graphic Card</td>
-                    </tr>
-                </table>
 
-                <div class="card">
-                    <div class="copy">
-                        <form id="catalog">
-                            <fieldset>
-                                <legend>SHOP NOW!</legend>
-                                <label>
-                                    <span>Item</span>
 
-                                    <select id="items" disabled>
-                                        <option value="dell laptop" selected>Dell Laptop</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>Quantity</span>
-                                    <input id="quantity" type="number" required />
-                                </label>
-                                <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO CART </button>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
+<section class="reviewSection">
+                    <form id="userReviews">
+                        <label for="userName">User Name </label>
+                        <input type="text" id="name" name="userName"><br>
+                        <label for="textReview">Your review *</label>
 
+                        <textarea id="textReview" rows="5" placeholder="please
+                            write
+                            your review here!"></textarea>
+                        <input id="submitButton" type="button" value="Submit"
+                            onclick="updateReview()"
+                            />
+                        <br />
+<!--                         <p id="as"></p> -->
+<!--                         <p id="na"></p> -->
+                    </form>
+                </section>
+           <div id="commentDiv">
+
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <p>&copy;2021 Electro Review</p>
+            <section id="social">
+                <img src="../assets/socialLogo/fb-icon.png" alt="FB">
+                <img src="../assets/socialLogo/twit-icon.png" alt="TWIT">
+                <img src="../assets/socialLogo/gp-icon.png" alt="GP">
+                <img src="../assets/socialLogo/insta-icon.png" alt="INSTA">
             </section>
-        </div>
 
+        </footer>
+        <script src="../js/app.js"></script>
+        <script src="../js/catalog.js"></script>
+        <script src="../js/sliders.js"></script>
+    </body>
 
-        <!-------------------------------------------------- Form--------------------------------- -->
-        <section>
-            <form id="userReviews">
-                <label for="userName">User Name </label>
-                <input type="text" id="name" name="userName"><br>
-                <textarea id="textReview" rows="5" placeholder="please write
-                    your review here!"></textarea>
-                <input type="button" value="submit" onclick="updateReview()" />
-                <br />
-                <!-- <p id="as"></p>
-                <p id="na"></p> -->
-            </form>
-        </section>
-        <div id="commentDiv">
-
-        </div>
-    </main>
-    <hr>
-    <footer>
-        <p>&copy;2021 Electro Review</p>
-        <section id="social">
-            <img src="../assets/socialLogo/fb-icon.png" alt="FB">
-            <img src="../assets/socialLogo/twit-icon.png" alt="TWIT">
-            <img src="../assets/socialLogo/gp-icon.png" alt="GP">
-            <img src="../assets/socialLogo/insta-icon.png" alt="INSTA">
-        </section>
-    </footer>
-    <script src="../js/app.js"></script>
-    <script src="../js/catalog.js"></script>
-    <script src="../js/sliders.js"></script>
-
-   
-
-</body>
 
 </html>

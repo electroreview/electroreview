@@ -16,7 +16,7 @@ function renderCart() {
 }
 
 function fillForm() {
-    const formArr = ['Name', 'Street', 'City', 'State', 'ZIP code', 'Phone Number'];
+    const formArr = ['Name', 'Phone Number'];
     let mainEl = document.getElementsByTagName('main')[0];
 
     let sectionEl = document.createElement('section');
@@ -66,6 +66,11 @@ function fillForm() {
     fieldsetEl.appendChild(buttonEl);
     buttonEl.textContent = 'Process Order';
 
+    // buttonEl.addEventListener('click', showAleart);
+    buttonEl.onclick = function () {
+        alert('Thank you for ordering');
+
+    };
 }
 
 function clearCart() {
