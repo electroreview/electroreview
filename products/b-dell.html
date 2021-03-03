@@ -15,8 +15,7 @@
     <header>
         <header>
             <nav>
-                <img id="logo" src="../assets/logo.png" width="150px"
-                    alt="logo">
+                <img id="logo" src="../assets/logo.png" width="150px" alt="logo">
                 <a href="../index.html">Home</a>
                 <a href="../about.html">About Us</a>
                 <a href="../product.html">Products</a>
@@ -93,27 +92,27 @@
                     </tr>
                 </table>
 
-                    <div class="card">
-                        <div class="copy">
-                            <form id="catalog">
-                                <fieldset>
-                                    <legend>SHOP NOW!</legend>
-                                    <label>
-                                        <span>Item</span>
+                <div class="card">
+                    <div class="copy">
+                        <form id="catalog">
+                            <fieldset>
+                                <legend>SHOP NOW!</legend>
+                                <label>
+                                    <span>Item</span>
 
-                                        <select id="items" disabled>
-                                            <option value="dell laptop" selected>Dell Laptop</option>
-                                        </select>
-                                    </label>
-                                    <label>
-                                        <span>Quantity</span>
-                                        <input id="quantity" type="number" required />
-                                    </label>
-                                    <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO CART </button>
-                                </fieldset>
-                            </form>
-                        </div>
+                                    <select id="items" disabled>
+                                        <option value="dell laptop" selected>Dell Laptop</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    <span>Quantity</span>
+                                    <input id="quantity" type="number" required />
+                                </label>
+                                <button class="addToCart"> <i class="fas fa-cart-plus"> </i> ADD TO CART </button>
+                            </fieldset>
+                        </form>
                     </div>
+                </div>
 
             </section>
         </div>
@@ -121,17 +120,20 @@
 
         <!-------------------------------------------------- Form--------------------------------- -->
         <section>
-            <form>
+            <form id="userReviews">
                 <label for="userName">User Name </label>
                 <input type="text" id="name" name="userName"><br>
-                <textarea id="textReview" rows="5" placeholder="please write your review here!"></textarea>
+                <textarea id="textReview" rows="5" placeholder="please write
+                    your review here!"></textarea>
                 <input type="button" value="submit" onclick="updateReview()" />
                 <br />
-                <p id="as"></p>
-                <p id="na"></p>
+                <!-- <p id="as"></p>
+                <p id="na"></p> -->
             </form>
         </section>
+        <div id="commentDiv">
 
+        </div>
     </main>
     <hr>
     <footer>
@@ -146,6 +148,9 @@
     <script src="../js/app.js"></script>
     <script src="../js/catalog.js"></script>
     <script src="../js/sliders.js"></script>
+
+   
+
 </body>
 
 </html>
