@@ -13,16 +13,14 @@
     <body>
 
         <header>
-            <header>
-                <nav>
-                    <img id="logo" src="../assets/logo.png" width="150px"
-                        alt="logo">
-                    <a href="../index.html">Home</a>
-                    <a href="../about.html">About Us</a>
-                    <a href="../product.html">Products</a>
-                    <a href="../cart.html">Cart</a><span id='itemCount'> </span>
-                </nav>
-            </header>
+            <nav>
+                <img id="logo" src="../assets/logo.png" width="150px"
+                    alt="logo">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About Us</a>
+                <a href="../product.html">Products</a>
+                <a href="../cart.html">Cart</a><span id='itemCount'> </span>
+            </nav>
         </header>
         <main>
             <div class="pic-spics">
@@ -90,70 +88,72 @@
                     </table>
 
                 </div>
-                <div class="card">
-                    <div class="copy">
-                        <form id="catalog">
-                            <fieldset>
-                                <legend>SHOP NOW!</legend>
-                                <label>
-                                    <span>Item</span>
-                                    <select id="items" disabled>
-                                        <option value="hp laptop"
-                                            selected>HP Laptop</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>Quantity</span>
-                                    <input id="quantity" type="number"
-                                        />
-                                </label>
-                                <button id="submit" class="addToCart"> <i
-                                        class="fas
-                                        fa-cart-plus"> </i> ADD TO CART</button>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-                <div class="card" id="cartContents"></div>
-
-
-                <section class="reviewSection">
-                    <form id="userReviews">
-                        <label for="userName">User Name </label>
-                        <input type="text" id="name" name="userName"><br>
-                        <label for="textReview">Your review *</label>
-
-                        <textarea id="textReview" rows="5" placeholder="please
-                            write
-                            your review here!"></textarea>
-                        <input id="submitButton" type="button" value="Submit"
-                            onclick="updateReview()"
-                            />
-                        <br />
-<!--                         <p id="as"></p> -->
-<!--                         <p id="na"></p> -->
+                <div class="quantityAndAddToCart">
+                    <form id="catalog">
+                        <fieldset>
+                            <legend>SHOP NOW!</legend>
+                            <label>
+                                <span>Item</span>
+                                <select id="items" disabled>
+                                    <option value="hp laptop"
+                                        selected>HP Laptop</option>
+                                </select>
+                            </label>
+                            <label>
+                                <span>Quantity</span>
+                                <input id="quantity" type="number"
+                                    />
+                            </label>
+                            <button id="submit" class="addToCart"> <i
+                                    class="fas
+                                    fa-cart-plus"> </i> ADD TO CART</button>
+                        </fieldset>
                     </form>
+                </div>
+
+                <hr>
+                <section class="reviewSection">
+                    <h3>User Review</h3>
+                    <div class="review">
+                        <form id="userReviews">
+                            <label for="userName">Your Name </label>
+                            <input type="text" id="name" name="userName"><br>
+                            <label for="textReview">Your Review *</label>
+                            <textarea id="textReview" rows="5"
+                                placeholder="please write your review here!"></textarea>
+                            <input id="submitButton" type="button"
+                                value="Submit"
+                                onclick="updateReview()"
+                                />
+                            <br />
+                            <!--                         <p id="as"></p> -->
+                            <!--                         <p id="na"></p> -->
+                        </form>
+                        <div id="commentDiv">
+                            <h5>Visitors Review </h5>
+
+                        </div>
+                    </div>
                 </section>
-           <div id="commentDiv">
 
             </div>
 
 
 
-            </main>
-            <hr>
-            <footer>
-                <p>&copy;2021 Electro Review</p>
-                <section id="social">
-                    <img src="../assets/socialLogo/fb-icon.png" alt="FB">
-                    <img src="../assets/socialLogo/twit-icon.png" alt="TWIT">
-                    <img src="../assets/socialLogo/gp-icon.png" alt="GP">
-                    <img src="../assets/socialLogo/insta-icon.png" alt="INSTA">
-                </section>
-            </footer>
-            <script src="../js/app.js"></script>
-            <script src="../js/catalog.js"></script>
-            <script src="../js/sliders.js"></script>
-        </body>
+        </main>
+        <hr>
+        <footer>
+            <p>&copy;2021 Electro Review</p>
+            <section id="social">
+                <img src="../assets/socialLogo/fb-icon.png" alt="FB">
+                <img src="../assets/socialLogo/twit-icon.png" alt="TWIT">
+                <img src="../assets/socialLogo/gp-icon.png" alt="GP">
+                <img src="../assets/socialLogo/insta-icon.png" alt="INSTA">
+            </section>
+        </footer>
+        <script src="../js/app.js"></script>
+        <script src="../js/catalog.js"></script>
+        <script src="../js/sliders.js"></script>
+    </body>
 
-    </html>
+</html>

@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  font-family: "Oswald", sans-serif;
+}
 html,
 body {
   width: 100%;
@@ -7,15 +11,6 @@ body {
   width: 437px;
   height: 400px;
 }
-
-/* #inputReview {
-    width: 50%;
-    height: 100px;
-}
-
-form #subReview {
-    margin: 50px;
-} */
 
 .dot {
   cursor: pointer;
@@ -159,19 +154,6 @@ button:active {
 
 /* product css */
 
-main h2 {
-  font-size: 70px;
-  font-style: italic;
-  font-family: "Times New Roman", Times, serif;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-main ul li {
-  display: inline-block;
-  padding: 70px;
-}
-
 .card {
   background-color: #fffffe;
   padding: 20px;
@@ -219,11 +201,6 @@ main ul li {
   left: 45%;
 }
 
-main ul li {
-  display: inline-block;
-  padding: 70px;
-}
-
 #itemCount {
   color: #ccc;
   font-size: 0.75em;
@@ -241,11 +218,6 @@ main ul li {
   padding: 0;
 }
 
-/* .deck.col-2 .card {
-  float: left;
-  width: 45%;
-} */
-
 legend {
   display: none;
 }
@@ -261,31 +233,13 @@ select {
   width: 100%;
 }
 
-/* input[type="submit"] {
-  float: right;
-} */
-
 label {
   display: block;
-  margin-bottom: 1em;
+  margin: 1em 0 1em 0;
+  font-size: 1.2rem;
 }
 
-label span {
-  display: block;
-  padding-bottom: 0.25em;
-}
-
-/* .card#cartContents:empty {
-  display: none;
-} */
-
-/* .card#cartContents {
-  background: #f5f5f5;
-  padding: 1.5em;
-  box-shadow: 0 3px 2px #777;
-} */
-
-/* Styles for the table on the cart page */
+/*Styles for the table on the cart page */
 
 #cart {
   border-collapse: collapse;
@@ -347,11 +301,14 @@ label span {
 }
 main h2 {
   text-align: center;
-  font-size: 40px;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
+  font-family: "Oswald", sans-serif;
   padding-top: 20px;
-  padding-bottom: 15px;
+  margin: 2%;
+  font-size: 2rem;
+  padding: 20px 70px;
+  border-radius: 200px;
+  box-shadow: 0 4px 8px 0 #4c96d7, 0 6px 20px 0 rgb(0 0 0 / 19%);
+  color: #4c96d7;
 }
 
 /* saran and nada work */
@@ -361,16 +318,6 @@ header {
   height: 200px;
 }
 
-/* #product {
-  float: left;
-} */
-
-/* #list {
-  float: right;
-  position: relative;
-  padding-left: 22cm;
-  padding-right: 2cm;
-} */
 #Pabout {
   color: #8f8f8f;
   text-align: left;
@@ -395,15 +342,9 @@ header {
 }
 
 .col1 {
-  /* width: 300px; */
-  /* float: left; */
-
   background-color: rgb(255, 206, 235);
 }
 .col2 {
-  /* width: 300px; */
-  /* float: right; */
-
   background-color: rgb(255, 206, 235);
 }
 #body {
@@ -429,7 +370,6 @@ header {
 }
 .h2Header {
   margin: 2% auto;
-  /* font-size: 1.3rem; */
   padding: 20px 70px;
   margin: 1.5% 3%;
   border-radius: 200px;
@@ -441,7 +381,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: cursive;
+  font-family: "Oswald", sans-serif;
   font-size: large;
   width: 84%;
   margin-left: 8%;
@@ -451,7 +391,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: cursive;
+  font-family: "Oswald", sans-serif;
   font-size: large;
   width: 87%;
   margin-left: 6%;
@@ -465,10 +405,9 @@ footer {
 }
 
 header nav {
-  /* border: 2px solid black; */
   display: flex;
   flex-direction: row;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 header nav a {
@@ -538,16 +477,12 @@ header nav a:hover {
   margin: 10px;
 }
 #catalog {
-  margin: 10px;
+  width: 100%;
 }
 
 #catalog fieldset label {
   margin: 10px;
 }
-
-/* #catalog fieldset button {
-  height: 10%;
-} */
 
 .reviewSection form {
   margin: 2%;
@@ -558,6 +493,7 @@ header nav a:hover {
   resize: none;
   height: 200px;
   width: 100%;
+  margin-bottom: 2%;
 }
 
 #submitButton {
@@ -570,6 +506,7 @@ header nav a:hover {
   font: inherit;
   padding: 12px 20px;
   transition: all 0.1s linear;
+  outline: 0;
 }
 button {
   border: 0;
@@ -581,12 +518,62 @@ button {
   font: inherit;
   padding: 12px 20px;
   transition: all 0.1s linear;
+  outline: 0;
 }
-/* 
-input:focus {
-  background-color: lawngreen;
-  border: none;
-} */
+
 #creditCard {
   width: 28%;
+}
+
+#catalog fieldset :nth-last-child(3) {
+  display: none;
+}
+.quantityAndAddToCart {
+  margin: 3% 0 3% 0;
+  width: 50%;
+}
+
+.reviewSection {
+  background-color: #e9e9e9;
+  padding: 1%;
+  border-radius: 15px;
+  font-family: "Oswald", sans-serif;
+}
+
+#catalog fieldset :nth-last-child(2) {
+  display: flex;
+  font-size: 1.3rem;
+}
+#catalog fieldset :nth-last-child(2) span {
+  margin-right: 15px;
+}
+
+.reviewSection h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  font-size: 1.3rem;
+  padding: 20px 70px;
+  border-radius: 200px;
+  box-shadow: 0 4px 8px 0 #4c96d7, 0 6px 20px 0 rgb(0 0 0 / 19%);
+  color: #4c96d7;
+}
+.reviewSection .review {
+  display: flex;
+  flex-direction: row;
+}
+.reviewSection .review li {
+  padding: 10px;
+  margin-left: 30px;
+  font-size: 1.3rem;
+}
+
+#commentDiv {
+  width: 50%;
+}
+#commentDiv h5 {
+  text-align: center;
+  margin-top: 4%;
+  font-size: 1.5rem;
 }

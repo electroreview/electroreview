@@ -46,7 +46,7 @@ const catalogForm = document.getElementById('catalog');
 catalogForm.addEventListener('submit', handleSubmit);
 
 
-let reviewArr={};
+let reviewArr = {};
 
 // onClick
 function updateReview() {
@@ -62,14 +62,14 @@ function updateReview() {
 }
 populateForm();
 
-function saveLocal(){
-    localStorage.setItem('comments',JSON.stringify(reviewArr));
+function saveLocal() {
+    localStorage.setItem('comments', JSON.stringify(reviewArr));
 }
 
 let commentDiv = document.getElementById('commentDiv');
 let ulEl = document.createElement('ul');
 commentDiv.appendChild(ulEl);
-function renderComments () {
+function renderComments() {
     let reviewArrData = JSON.parse(localStorage.getItem('comments'));
     console.log(reviewArrData);
 
@@ -79,13 +79,15 @@ function renderComments () {
 
 
     let i;
-    for( i in reviewArrData) {
+    for (i in reviewArrData) {
         let liEl = document.createElement('li');
         liEl.className = 'liClass';
         ulEl.appendChild(liEl);
         console.log(reviewArrData);
         liEl.textContent = `${i}:${reviewArrData[i]}`;
     }
+
+
 }
 renderComments();
 
